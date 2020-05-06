@@ -1,25 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './layouts/Header';
+import Sidebar from "./layouts/Sidebar";
+import Footer from "./layouts/Footer";
 import './App.css';
+import styled from '@emotion/styled';
+import Email from './layouts/Email';
+import Content from "./layouts/Content";
+
+
+
+
+const Grid = styled.div`
+ block-size: min(100vh);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main email"
+      "sidebar footer email";
+    grid-template-rows:  auto;
+    grid-template-columns: 7vw auto 7vw;
+  }
+`;
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Grid>
+    
+
+<Header />
+<Sidebar />
+
+
+<Content> 
+
+</Content>
+
+<Email />
+
+<Footer />
+</Grid>
   );
 }
 
