@@ -12,12 +12,12 @@ const centerStyles = css`
 
 const FootWrap = styled.footer`
   grid-area: footer;
-  block-size: min(10vh);
+  block-size: min(10.5vh);
   color:greenyellow;
   background-color:purple;
- 
 
-  ${centerStyles};
+
+ ${centerStyles};
   
 `;
 

@@ -8,8 +8,6 @@ import Email from './layouts/Email';
 import Content from "./layouts/Content";
 
 
-
-
 const Grid = styled.div`
  block-size: min(100vh);
   margin: 0;

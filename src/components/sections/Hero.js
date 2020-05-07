@@ -10,20 +10,30 @@ const centerStyles = css`
   justify-content: center;
 `;
 const Div = styled.section`
-color:blue;
-background-color:palevioletred;
-height:25vh;
-width: 100%;
+color:red;
+background-color:yellowgreen;
 ${centerStyles};
+height: 25vh;
+
 `;
 
-export default class About extends Component {
+
+export default class Hero extends Component {
     render() {
         return (
-            <Div>  <h1> About me</h1></Div>
+            <Div>
+       <h1>Hi my name is</h1> 
+       
+       <h2>Tommy Maher</h2> 
+        
+       <h3>I build things on the web.</h3>
 
-         
-            
+
+
+         <button>Get in Touch</button>
+
+            </Div>
+          
         )
     }
 }
