@@ -10,9 +10,11 @@ const centerStyles = css`
   justify-content: center;
 `;
 const Div = styled.section`
+
+
 color:blue;
 background-color:palevioletred;
-height:25vh;
+block-size:100%
 
 
 ${centerStyles};

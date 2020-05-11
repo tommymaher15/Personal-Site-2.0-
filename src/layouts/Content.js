@@ -6,17 +6,27 @@ import Contact from "../components/sections/Contact";
 import styled from '@emotion/styled';
 
 
+const Wrapper = styled.div`
+display: grid; 
+grid-area:main;`;
+
 const Div = styled.div`
-  grid-area: main;
+ display:grid;
+ grid-template-rows: repeat(4, 1fr);
+  
+  
+  
+   
+ 
   background-color: papayawhip;
   color: palevioletred;
-  min-height: 100vh;
-  width: 100%;
+
 `;
 
 export default class Content extends Component {
     render() {
         return (
+            <Wrapper>
            <Div>
        <Hero></Hero>
        <About></About>
@@ -24,6 +34,7 @@ export default class Content extends Component {
        <Contact></Contact>
                 
        </Div>
+       </Wrapper>
         )
     }
 }

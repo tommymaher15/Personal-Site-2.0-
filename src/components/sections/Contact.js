@@ -10,10 +10,11 @@ const centerStyles = css`
   justify-content: center;
 `;
 const Div = styled.section`
+
+
 color:red;
 background-color:pink;
-height:25vh;
-width: 100%;
+block-size:100%
 ${centerStyles};
 `;
 export default class Contact extends Component {

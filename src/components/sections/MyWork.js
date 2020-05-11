@@ -14,8 +14,7 @@ const centerStyles = css`
 const Div = styled.section`
 color:red;
 background-color:darkcyan;
-height:25vh;
-width: 100%;
+block-size:100%
 ${centerStyles};
 `;
 

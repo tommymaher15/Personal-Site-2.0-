@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+const SideWrap = styled.div`
+display:grid;
+grid-area:sidebar;
+`;
 
-const SideWrap = styled.aside`
+
+const Sidebar1 = styled.aside`
 background-color:brown;
-grid-area: sidebar;
+
 position: sticky;
   top: 0;
   
@@ -18,7 +23,9 @@ position: sticky;
 
 export default function Sidebar() {
     return (
-        <SideWrap />
+      <SideWrap>
+        <Sidebar1 />
+        </SideWrap>
     )
 }
 

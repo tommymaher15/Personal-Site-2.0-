@@ -10,18 +10,30 @@ import Content from "./layouts/Content";
 
 const Grid = styled.div`
  block-size: min(100vh);
-  margin: 0;
-  padding: 0;
+ display:grid;
+ grid-template-columns: 100%;
+ grid-template-rows:min-content 1fr min-content;
+ grid-template-areas:
+ "header header header"
+ "main main main"
+ "footer footer footer";
 
-  @media (min-width: 1000px) {
+ 
+
+
+
+ 
+
+ @media (min-width: 750px) {
     display: grid;
     grid-template-areas:
       "header header header"
       "sidebar main email"
       "sidebar footer email";
-    grid-template-rows:  auto;
-    grid-template-columns: 7vw auto 7vw;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 7vw 1fr 7vw;
   }
+  
 `;
 
 

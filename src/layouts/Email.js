@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+const SideWrap = styled.div`
+display:grid;
+grid-area:email;
+`;
 
-const SideWrap = styled.aside`
+
+
+const SideEmail = styled.aside`
 background-color:teal;
-grid-area: email;
+
 position: sticky;
   top: 0;
 
@@ -17,7 +23,10 @@ position: sticky;
 
 export default function Email() {
     return (
-        <SideWrap />
+      <SideWrap>
+        <SideEmail />
+        </SideWrap>
+        
     )
 }
 
