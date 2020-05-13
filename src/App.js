@@ -2,29 +2,22 @@ import React from 'react';
 import Header from './layouts/Header';
 import Sidebar from "./layouts/Sidebar";
 import Footer from "./layouts/Footer";
-import './App.css';
 import styled from '@emotion/styled';
 import Email from './layouts/Email';
 import Content from "./layouts/Content";
+import GlobalFonts from "./styles/fonts";
 
 
 const Grid = styled.div`
  block-size: min(100vh);
  display:grid;
- grid-template-columns: 100%;
+ grid-template-columns: 100vh;
  grid-template-rows:min-content 1fr min-content;
  grid-template-areas:
  "header header header"
  "main main main"
  "footer footer footer";
-
- 
-
-
-
- 
-
- @media (min-width: 750px) {
+ @media (min-width: 768px) {
     display: grid;
     grid-template-areas:
       "header header header"
@@ -33,7 +26,6 @@ const Grid = styled.div`
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: 7vw 1fr 7vw;
   }
-  
 `;
 
 
@@ -42,7 +34,10 @@ const Grid = styled.div`
 
 function App() {
   return (
+    
   <Grid>
+  <GlobalFonts/>
+ 
     
 
 <Header />
@@ -56,7 +51,9 @@ function App() {
 <Email />
 
 <Footer />
+
 </Grid>
+
   );
 }
 

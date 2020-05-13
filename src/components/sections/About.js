@@ -14,9 +14,7 @@ const Div = styled.section`
 
 color:blue;
 background-color:palevioletred;
-block-size:100%
-
-
+block-size:100%;
 ${centerStyles};
 `;
 

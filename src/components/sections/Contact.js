@@ -14,7 +14,7 @@ const Div = styled.section`
 
 color:red;
 background-color:pink;
-block-size:100%
+block-size:100%;
 ${centerStyles};
 `;
 export default class Contact extends Component {

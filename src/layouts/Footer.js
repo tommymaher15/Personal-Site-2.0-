@@ -1,23 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {  css } from '@emotion/core';
+import mixin from '../styles/mixin';
+import colors from '../styles/colors';
 
-const centerStyles = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-`;
+
 
 
 const FootWrap = styled.footer`
   grid-area: footer;
   block-size: min(10.5vh);
   color:greenyellow;
-  background-color:purple;
-
-
- ${centerStyles};
+  background-color:${colors.navy};
+  ${mixin.centerStyles};
   
 `;
 

@@ -1,17 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {  css } from '@emotion/core';
- // Double dots to go back a directory!!!
-  
-/*
-Figure out how to get css utilities stored in a js file.
+import colors from '../styles/colors';
+import mixin from '../styles/mixin';
 
-*/
-const centerStyles = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+
 
 
 const HeadWrap = styled.div`
@@ -22,19 +14,36 @@ grid-column: 1 / 4;
   width:100%
  
 `;
-const Test = styled.header`
+const HeadBar = styled.header`
   grid-area: header;
   block-size: min(10vh);
-  color:blue;
-  ${centerStyles};
+  background-color:${colors.lightNavy};
+  color:${colors.vLightSlate};
+  ${mixin.centerStyles};
   
 
 `;
+ 
+const NavList = styled.ul`
+display:flex;  
+  list-style:none;`
+
+const ListItem = styled.li`
+padding-left:2em;
+font-family: "Calibre"`;
+
+
 
 export default function Header() {
     return (
         <HeadWrap>
-   <Test><h1> Header</h1></Test>
+   <HeadBar>
+   <NavList>
+   <ListItem>About</ListItem>
+   <ListItem>My Work</ListItem>
+   <ListItem>Contact</ListItem>
+   </NavList>
+    </HeadBar>
        
         
         </HeadWrap>
