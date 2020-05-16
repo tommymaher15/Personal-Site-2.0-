@@ -17,12 +17,13 @@ background-color:${theme.colors.lightNavy};
 ${centerStyles};
 block-size:100%;
 display:flex;
-padding: 200px 150px;
+
 line-height: 1.3;
 `;
 
 const HeroContent = styled.div`
-font-family: "Calibre"
+font-family: "Calibre";
+padding:  150px;
 
 `;
 const Heading1 = styled.h1`
@@ -48,7 +49,7 @@ const Heading3 = styled.h3`
 color:${theme.colors.lightSlate};
 font-family:"Calibre";
 font-weight:600;
-font-size:80px;
+font-size:12.5vh;
 line-height:1.1px;
 `;
 
@@ -94,8 +95,8 @@ export default class Hero extends Component {
        
        <HeroP>
        I'm a web developer based in Dublin, Ireland specializing
-        in building websites,apps and
-         anything else that resides online.
+        in building websites, apps and
+         everything else that resides online.
           </HeroP>
       
 

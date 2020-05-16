@@ -17,7 +17,7 @@ const Grid = styled.div`
  "header header header"
  "main main main"
  "footer footer footer";
- @media (min-width: 768px) {
+ @media (min-width: 750px) {
     display: grid;
     grid-template-areas:
       "header header header"
@@ -25,6 +25,9 @@ const Grid = styled.div`
       "sidebar footer email";
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: 7vw 1fr 7vw;
+
+
+
   }
 `;
 

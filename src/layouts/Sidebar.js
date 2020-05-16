@@ -4,13 +4,16 @@ import styled from '@emotion/styled';
 const SideWrap = styled.div`
 display:grid;
 grid-area:sidebar;
+
 `;
 
 
 const Sidebar1 = styled.aside`
 background-color:brown;
 
-position: sticky;
+height:100vh;
+position: -webkit-sticky;
+  position: sticky;
   top: 0;
   
 
@@ -24,7 +27,26 @@ position: sticky;
 export default function Sidebar() {
     return (
       <SideWrap>
-        <Sidebar1 />
+        <Sidebar1> 
+        <h1>
+          T
+        </h1>
+        <h1>
+          T
+        </h1>
+        
+        <h1>
+          T
+        </h1>
+        
+        <h1>
+          T
+        </h1>
+        
+        
+        
+        
+        </Sidebar1>
         </SideWrap>
     )
 }

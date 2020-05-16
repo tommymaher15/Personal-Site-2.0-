@@ -8,18 +8,18 @@ import colors from '../styles/colors';
 
 const FootWrap = styled.footer`
   grid-area: footer;
-  block-size: min(10.5vh);
+  block-size: 100%;
   color:greenyellow;
   background-color:${colors.navy};
   ${mixin.centerStyles};
   
-`;
+`
 
 
 export default function Footer() {
     return (
         <FootWrap>
-        <h1>Footer</h1>
+        <h2>Made by Tommy Maher</h2>
         
   
 
