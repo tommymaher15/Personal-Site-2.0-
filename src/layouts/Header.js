@@ -7,9 +7,7 @@ import mixin from '../styles/mixin';
 
 
 const HeadWrap = styled.div`
-
 grid-column: 1 / 4;
- background-color:red;
   height: 10vh;
   width:100%
  
@@ -17,11 +15,11 @@ grid-column: 1 / 4;
 const HeadBar = styled.header`
   grid-area: header;
   block-size: min(10vh);
-  background-color:${colors.lightNavy};
+  background-color:${colors.navy};
   color:${colors.vLightSlate};
   ${mixin.centerStyles};
+  width:100%
   
-
 `;
  
 const NavList = styled.ul`

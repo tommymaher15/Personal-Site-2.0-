@@ -1,38 +1,55 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled';
-import {  css } from '@emotion/core';
+/*import {  css } from '@emotion/core';*/
 import theme from '../../styles/theme';
 
 
 //custom styling
-const centerStyles = css`
+/*const centerStyles = css`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
-
+*/
 const Div = styled.section`
 
-background-color:${theme.colors.lightNavy};
-${centerStyles};
-block-size:100%;
-display:flex;
+background-color:${theme.colors.navy};
 
-line-height: 1.3;
+block-size:100%;
+padding-bottom:6em;
+
+
+
 `;
 
 const HeroContent = styled.div`
 font-family: "Calibre";
-padding:  150px;
+display:inline-block;
+border:2rem;
+margin-left:2em;
+margin:2em;
+margin-bottom:8em;
+margin-top:3em;
+
+
+
+
 
 `;
 const Heading1 = styled.h1`
 
 color:${theme.colors.green};
 font-family:"SF Mono";
-font-size:${theme.fontSizes.md};
+font-size: clamp(0.5rem, 1vw + 1rem, 1.2rem);
 font-weight:400;
-line-height:20.8px;
+line-height: 1;
+padding-bottom:0;
+padding-top:0;
+margin-bottom:0;
+
+
+
+
 
 
 `;
@@ -41,23 +58,41 @@ const Heading2 = styled.h2`
 color:${theme.colors.vLightSlate};
 font-family:"Calibre";
 font-weight: 600;
-font-size:80px;
-line-height:1.1px;
+font-size: clamp(4rem, 1vw + 1rem, 5rem);
+padding-bottom:0;
+padding-top:0;
+margin-bottom:0;
+border-bottom:0;
+line-height:1;
+margin-top:25;
 `;
 
 const Heading3 = styled.h3`
 color:${theme.colors.lightSlate};
 font-family:"Calibre";
 font-weight:600;
-font-size:12.5vh;
-line-height:1.1px;
+font-size: clamp(4rem, 1vw + 1rem, 5rem);
+line-height:1;
+margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    border-right-width: 100px;
+    border-top-width: 10px;
+
+
 `;
 
 const HeroP = styled.p`
 color:${theme.colors.slate};
 font-family:"Calibre";
 font-weight:400;
-font-size:${theme.fontSizes.xl}
+font-size:${theme.fontSizes.xl};
+line-height:1.5;
+display: block;
+width: 50%;
+max-width: 500px;
+text-align:left;
+
 `;
 
 const HeroBtn = styled.button`
@@ -65,17 +100,21 @@ color:${theme.colors.green};
 background-color:transparent;
 font-family:"SF Mono";
 font-size:${theme.fontSizes.sm};
+
 font-weight:400;
 border: 1px solid ${theme.colors.green};
 border-radius: 3px;
 padding: 1.25rem 1.75rem;
 line-height:1;
+margin-top:2em;
 
-    
+
+
+  
 
 &:hover {
 /* come back to this!! */
-  
+  color:red;
 }
 
 
@@ -91,13 +130,12 @@ export default class Hero extends Component {
             <HeroContent>
        <Heading1> Hi, my name is  </Heading1>
        <Heading2> Tommy Maher.</Heading2>
-       <Heading3>I'm a Web Developer.</Heading3>
+       <Heading3>I solve problems using code.</Heading3>
        
        <HeroP>
-       I'm a web developer based in Dublin, Ireland specializing
-        in building websites, apps and
-         everything else that resides online.
-          </HeroP>
+        I am a Front end developer based in Dublin, Ireland specializing
+        in building clean and robust products that solve your problems and look great. 
+        </HeroP>
       
 
          <HeroBtn>Get in touch </HeroBtn>

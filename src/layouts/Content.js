@@ -8,16 +8,13 @@ import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
 display: grid; 
-grid-area:main;`;
+grid-area:main;
+`;
 
 const Div = styled.div`
  display:grid;
+ grid-template-columns:auto;
  grid-template-rows: repeat(4, 1fr);
-  
-  
-  
-   
- 
   background-color: papayawhip;
   color: palevioletred;
 

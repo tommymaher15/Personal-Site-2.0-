@@ -11,24 +11,24 @@ import GlobalFonts from "./styles/fonts";
 const Grid = styled.div`
  block-size: min(100vh);
  display:grid;
- grid-template-columns: 100vh;
+ grid-template-columns: 1fr;
  grid-template-rows:min-content 1fr min-content;
  grid-template-areas:
  "header header header"
- "main main main"
+ "main   main    main "
  "footer footer footer";
- @media (min-width: 750px) {
+
+ @media (min-width: 768px) {
     display: grid;
     grid-template-areas:
       "header header header"
-      "sidebar main email"
+      "sidebar main   email"
       "sidebar footer email";
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: 7vw 1fr 7vw;
-
-
-
   }
+
+
 `;
 
 

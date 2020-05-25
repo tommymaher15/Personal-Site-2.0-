@@ -4,46 +4,38 @@ import styled from '@emotion/styled';
 const SideWrap = styled.div`
 display:grid;
 grid-area:sidebar;
-
 `;
 
 
 const Sidebar1 = styled.aside`
 background-color:brown;
-
+position: sticky;
 height:100vh;
-position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  
-
-  
-
+top: 0; 
+/*remove sidebar below this size */
+@media (max-width: 750px) {
+display:none;
+}
 
 `;
 
+
+
+
+const StickyTesting = styled.h1`
+color:green;
+
+
+`;
 
 
 export default function Sidebar() {
     return (
       <SideWrap>
         <Sidebar1> 
-        <h1>
-          T
-        </h1>
-        <h1>
-          T
-        </h1>
-        
-        <h1>
-          T
-        </h1>
-        
-        <h1>
-          T
-        </h1>
         
         
+        <StickyTesting>Hello</StickyTesting>
         
         
         </Sidebar1>

@@ -13,7 +13,7 @@ const theme = {
 
 
        colors : {
-        navy:        '#0a192f',
+        navy:        '#010215',
         lightNavy:   '#172a45',
         vLightNavy:  '#303C55',
         slate:       '#8892b0',
