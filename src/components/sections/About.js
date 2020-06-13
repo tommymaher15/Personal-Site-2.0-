@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
-
 import Image from "./myimg.jpg";
 
 
@@ -28,7 +27,7 @@ const AboutHeading = styled.h3`
 font-family:"Calibre";
 font-size:32px;
 font-weight:600;
-color:${theme.colors.slate};
+color:${theme.colors.vLightSlate};
 
 
 

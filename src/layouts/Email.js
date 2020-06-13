@@ -3,21 +3,27 @@ import styled from '@emotion/styled';
 
 /* Grid styles */
 const SideWrap = styled.div`
-display:grid;
 grid-area:email;
+top:-100px;
+
 `;
 
 
 /* Sidebar Stylings */
 const SideEmail = styled.aside`
+
 background-color:teal;
-position: sticky;
-top:0;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 height:100vh;
+
+
+
 
  
 /*remove sidebar below this size */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   display:none;
 }
 
@@ -27,8 +33,8 @@ height:100vh;
 const StickyTesting = styled.h1`
 color:green;
 position:sticky;
-position: webkit-sticky;
-top:0;
+
+
 `;
 
 

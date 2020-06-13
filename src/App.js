@@ -10,22 +10,25 @@ import GlobalFonts from "./styles/fonts";
 
 const Grid = styled.div`
  block-size: min(100vh);
+
  display:grid;
- grid-template-columns: 1fr;
+
+ grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));;
  grid-template-rows:min-content 1fr min-content;
  grid-template-areas:
- "header header header"
- "main   main    main "
- "footer footer footer";
+ " header "
+ "  main "
+ " footer ";
 
  @media (min-width: 768px) {
     display: grid;
+ block-size: min(100vh);
     grid-template-areas:
       "header header header"
-      "sidebar main   email"
+      "sidebar  main  email"
       "sidebar footer email";
     grid-template-rows: min-content 1fr min-content;
-    grid-template-columns: 7vw 1fr 7vw;
+    grid-template-columns: min-content 1fr min-content;
   }
 
 
@@ -40,16 +43,13 @@ function App() {
     
   <Grid>
   <GlobalFonts/>
- 
-    
-
 <Header />
 <Sidebar />
 
 
-<Content> 
+<Content /> 
 
-</Content>
+
 
 <Email />
 

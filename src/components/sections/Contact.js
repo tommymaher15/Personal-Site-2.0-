@@ -69,7 +69,7 @@ color:${theme.colors.vLightSlate};
 font-family:"Calibre";
 font-weight: 600;
 line-height:1;
-font-size: 60px;
+font-size: 3.5em;
 margin-bottom: -1px;
 
 

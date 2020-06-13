@@ -1,29 +1,29 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import colors from '../styles/colors';
+import theme from "../styles/theme";
 import mixin from '../styles/mixin';
 
 
 
-
 const HeadWrap = styled.div`
-grid-column: 1 / 4;
-  height: 10vh;
-  width:100%
- 
-`;
+     grid-column: 1 / 4;
+
+   `;
+
 const HeadBar = styled.header`
-  grid-area: header;
-  block-size: min(10vh);
-  background-color:${colors.navy};
-  color:${colors.vLightSlate};
-  ${mixin.centerStyles};
-  width:100%
+
+    grid-area: header;
+    block-size: min(10vh);
+    background-color:${theme.colors.navy};
+    color:${theme.colors.vLightSlate};
+    ${mixin.centerStyles};
+
+  
   
 `;
  
 const NavList = styled.ul`
-display:flex;  
+  display:flex;  
   list-style:none;`
 
 const ListItem = styled.li`

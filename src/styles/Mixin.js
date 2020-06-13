@@ -10,14 +10,12 @@ const mixins = {
     leftStyles: css`
     display:flex;
     align-items:left;
-    justify-content:left;
-    
-    `
+    justify-content:left;`,
 
-
-
-
-
+    rightStyles: css`
+    display:flex;
+    align-items:right;
+    justify-content:right; `
 }
 
 export default mixins;
