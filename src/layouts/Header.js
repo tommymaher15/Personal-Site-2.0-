@@ -5,36 +5,34 @@ import mixin from '../styles/mixin';
 
 
 
-const HeadWrap = styled.div`
-     grid-column: 1 / 4;
-
-   `;
 
 const HeadBar = styled.header`
-
+ width:100%;
+     grid-column: 1 / 4;
     grid-area: header;
     block-size: min(10vh);
     background-color:${theme.colors.navy};
     color:${theme.colors.vLightSlate};
-    ${mixin.centerStyles};
-
-  
-  
+    
 `;
  
 const NavList = styled.ul`
   display:flex;  
-  list-style:none;`
+  list-style:none;
+  ${mixin.centerStyles};`
+ 
 
 const ListItem = styled.li`
 padding-left:2em;
-font-family: "Calibre"`;
+font-family: "Calibre"
+${mixin.centerStyles};`;
+
 
 
 
 export default function Header() {
     return (
-        <HeadWrap>
+    
    <HeadBar>
    <NavList>
    <ListItem>About</ListItem>
@@ -44,6 +42,6 @@ export default function Header() {
     </HeadBar>
        
         
-        </HeadWrap>
+        
     )
 }

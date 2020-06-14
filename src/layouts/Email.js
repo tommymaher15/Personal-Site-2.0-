@@ -1,27 +1,20 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import theme from "../styles/theme";
 
-/* Grid styles */
-const SideWrap = styled.div`
-grid-area:email;
-top:-100px;
 
-`;
+
 
 
 /* Sidebar Stylings */
 const SideEmail = styled.aside`
 
-background-color:teal;
-position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-height:100vh;
+background-color:${theme.colors.navy};
+    color:${theme.colors.vLightSlate};
+grid-area: email;
 
 
 
-
- 
 /*remove sidebar below this size */
 @media (max-width: 768px) {
   display:none;
@@ -31,8 +24,13 @@ height:100vh;
 
 /* Testing for sticky content to float over sidebar. */
 const StickyTesting = styled.h1`
-color:green;
-position:sticky;
+color:${theme.colors.vLightSlate};
+transform: rotate(90deg);
+position: sticky;
+position: -webkit-sticky;
+/* Position top, keep the sticky for the CONTENT! */ 
+top: 300px;
+
 
 
 `;
@@ -40,7 +38,7 @@ position:sticky;
 
 export default function Email() {
     return (
-      <SideWrap>
+   
         <SideEmail>
 
 
@@ -48,7 +46,7 @@ export default function Email() {
         
          
         </SideEmail>
-        </SideWrap>
+     
         
     )
 }

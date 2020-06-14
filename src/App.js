@@ -13,11 +13,12 @@ const Grid = styled.div`
 
  display:grid;
 
- grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));;
+ grid-template-columns:npm min-content 1fr min-content;
  grid-template-rows:min-content 1fr min-content;
  grid-template-areas:
+
  " header "
- "  main "
+ "  main  "
  " footer ";
 
  @media (min-width: 768px) {
@@ -30,7 +31,6 @@ const Grid = styled.div`
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: min-content 1fr min-content;
   }
-
 
 `;
 

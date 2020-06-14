@@ -5,14 +5,14 @@ import theme from '../styles/theme';
 
 
 
-const FootWrap = styled.div`
-  grid-column: 1 / 4;
-     
-`
+
+
 const Foot = styled.footer`
- grid-area:footer;
-block-size: min(10vh);
-    background-color:${theme.colors.navy};
+ grid-column: 1 / 4;
+ grid-area: footer;
+ width:100%;
+  block-size: min(10vh);
+    background-color:${theme.colors.darkNavy};
     color:${theme.colors.vLightSlate};
     ${mixin.centerStyles};
 
@@ -21,7 +21,7 @@ block-size: min(10vh);
 
 export default function Footer() {
     return (
-        <FootWrap>
+       
 
 
         <Foot>
@@ -32,6 +32,5 @@ export default function Footer() {
   
 
 
-        </FootWrap>
     )
 }

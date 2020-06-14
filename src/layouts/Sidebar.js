@@ -1,22 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
-const SideWrap = styled.div`
-
-grid-area:sidebar;
-
-
-`;
+import theme from "../styles/theme";
+import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
 
 const Sidebar1 = styled.aside`
+ background-color:${theme.colors.navy};
+    color:${theme.colors.vLightSlate};
+grid-area: sidebar;
 
- position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-height:100vh;
-
-background-color:brown;
+  
 
 
 @media (max-width: 768px) {
@@ -29,25 +22,69 @@ background-color:brown;
 
 
 
-const StickyTesting = styled.h1`
-color:green;
-position:sticky;
+const StickyTesting = styled.div`
+color:${theme.colors.vLightSlate};
+transform: rotate(360deg);
+font-size:24px;
+position: sticky;
+position: -webkit-sticky;
+/* Position top, keep the sticky for the CONTENT! */ 
+  top: 450px;
+padding-right:1em;
+
+ 
+`;
+
+const SocialList = styled.ul`
+
+list-style-type:none;
+
+::after
+{
+content: "";
+display: block;
+width: 1px;
+height: 10vh;
+margin: 0px auto;
+background-color: rgb(168, 178, 209);
+
+}
+`;
+
+
+const SocialListItem = styled.li`
+padding:30px;
+color: ${theme.colors.vLightSlate};
+&:hover{
+  color:${theme.colors.green};
+  transform: scale(1.150);
+};
+
+
 
 
 `;
 
-
 export default function Sidebar() {
     return (
-      <SideWrap>
+ 
         <Sidebar1> 
         
         
-        <StickyTesting>Hello</StickyTesting>
+        <StickyTesting>
+        <SocialList> 
+        <SocialListItem><FaGithubSquare /></SocialListItem>
+        <SocialListItem><FaLinkedin /></SocialListItem>
+        <SocialListItem><FaTwitterSquare /></SocialListItem>
+       
+        </SocialList>
+
+   
+        </StickyTesting>
         
         
         </Sidebar1>
-        </SideWrap>
+      
     )
 }
 
