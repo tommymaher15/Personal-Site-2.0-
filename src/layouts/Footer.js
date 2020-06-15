@@ -2,12 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import mixin from '../styles/mixin';
 import theme from '../styles/theme';
-
+import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
 
 
 
 const Foot = styled.footer`
+bottom:0;
  grid-column: 1 / 4;
  grid-area: footer;
  width:100%;
@@ -15,6 +16,28 @@ const Foot = styled.footer`
     background-color:${theme.colors.darkNavy};
     color:${theme.colors.vLightSlate};
     ${mixin.centerStyles};
+  
+`;
+
+
+const SocialList = styled.ul`
+list-style-type:none;
+@media(min-width: 768px){
+    display:none;
+}
+
+`;
+
+
+const SocialListItem = styled.li`
+display:inline-block;
+font-size:24px;
+padding:30px;
+color: ${theme.colors.vLightSlate};
+&:hover{
+  color:${theme.colors.green};
+  transform: scale(1.150);
+};
 
 `;
 
@@ -25,7 +48,18 @@ export default function Footer() {
 
 
         <Foot>
-        <h2>Made by Tommy Maher</h2>
+        
+        <SocialList> 
+        <SocialListItem><FaGithubSquare /></SocialListItem>
+        <SocialListItem><FaLinkedin /></SocialListItem>
+        <SocialListItem><FaTwitterSquare /></SocialListItem>
+       
+        </SocialList>
+
+
+
+
+
         </Foot>
         
         

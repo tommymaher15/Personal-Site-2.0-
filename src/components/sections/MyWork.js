@@ -45,7 +45,9 @@ flex-direction: column;
 background-color:${theme.colors.Navy};
 
 box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.3);
-padding: 20px;`;
+padding: 20px;
+width:60%;
+margin-left:8em;`;
 
 const SkillList = styled.ul`
 display: flex;
@@ -123,6 +125,7 @@ const HeadingContainer = styled.div`
 
 display:flex;
 justify-content:center;
+
 
 `;
 

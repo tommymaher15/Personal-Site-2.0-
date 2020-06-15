@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled';
-/*import {  css } from '@emotion/core';*/
+
 import theme from '../../styles/theme';
 
 
@@ -23,14 +23,15 @@ padding-bottom:6em;
 `;
 
 const HeroContent = styled.div`
+margin-left:10em;
 font-family: "Calibre";
-display:inline-block;
+display:flex;
+height:100%;
 border:2rem;
-margin-left:2em;
-margin:2em;
-margin-bottom:8em;
-margin-top:3em;
-
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+left:-200px;
 
 
 

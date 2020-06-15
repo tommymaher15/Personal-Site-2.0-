@@ -23,15 +23,40 @@ grid-area: email;
 `;
 
 /* Testing for sticky content to float over sidebar. */
-const StickyTesting = styled.h1`
-color:${theme.colors.vLightSlate};
-transform: rotate(90deg);
-position: sticky;
-position: -webkit-sticky;
+const StickyTesting = styled.div`
+ position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-left:2em;
+  
+
+
 /* Position top, keep the sticky for the CONTENT! */ 
-top: 300px;
+`;
 
+const MailLink = styled.p`
+font-size:14px;
+padding:30px;
+letter-spacing: 0.1em;
+font-family:"SF Mono";
+font-weight:300;
+padding: 10px;
+writing-mode: vertical-rl;
 
+&:hover{
+  color:${theme.colors.green};
+  transform: scale(1.1);
+};
+
+::after
+{
+content: "";
+display: inline-block;
+width: 1px;
+height: 11vh;
+margin-top:1.5em;
+background-color: rgb(168, 178, 209);
+}
 
 `;
 
@@ -40,11 +65,14 @@ export default function Email() {
     return (
    
         <SideEmail>
+<StickyTesting>
+
+<MailLink>tommymaher10@gmail.com</MailLink>
 
 
-        <StickyTesting>Hello</StickyTesting>
-        
-         
+
+
+</StickyTesting>
         </SideEmail>
      
         

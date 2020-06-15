@@ -22,7 +22,7 @@ padding-left:2em;
 padding-top:2em; `;
 
 const AboutHeading = styled.h3`
-
+margin-left:4em;
 
 font-family:"Calibre";
 font-size:32px;
@@ -59,6 +59,8 @@ margin-left: 5.9em;
 `;
 
 const Container = styled.div` 
+
+margin-left:10em;
  display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -70,7 +72,7 @@ const Container = styled.div`
 margin:2em;
 margin-bottom:8em;
 margin-top:3em;
-margin-left:4em;
+margin-left:14em;
 margin-right:2em;
 
 `;

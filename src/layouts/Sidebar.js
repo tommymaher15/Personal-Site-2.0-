@@ -5,17 +5,12 @@ import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
 
 const Sidebar1 = styled.aside`
- background-color:${theme.colors.navy};
-    color:${theme.colors.vLightSlate};
-grid-area: sidebar;
-
-  
-
+     background-color:${theme.colors.navy};
+    grid-area: sidebar;
 
 @media (max-width: 768px) {
   display:none;
 }
-
 
 `;
 
@@ -23,20 +18,18 @@ grid-area: sidebar;
 
 
 const StickyTesting = styled.div`
-color:${theme.colors.vLightSlate};
-transform: rotate(360deg);
-font-size:24px;
-position: sticky;
-position: -webkit-sticky;
-/* Position top, keep the sticky for the CONTENT! */ 
-  top: 450px;
-padding-right:1em;
+ position: fixed;
+  bottom: 0;
+  left: 0;
 
  
 `;
 
 const SocialList = styled.ul`
 
+transform: rotate(360deg);
+
+padding-right:1em;
 list-style-type:none;
 
 ::after
@@ -53,6 +46,7 @@ background-color: rgb(168, 178, 209);
 
 
 const SocialListItem = styled.li`
+font-size:24px;
 padding:30px;
 color: ${theme.colors.vLightSlate};
 &:hover{

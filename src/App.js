@@ -6,11 +6,10 @@ import styled from '@emotion/styled';
 import Email from './layouts/Email';
 import Content from "./layouts/Content";
 import GlobalFonts from "./styles/fonts";
-
+  import './App.css';
 
 const Grid = styled.div`
  block-size: min(100vh);
-
  display:grid;
 
  grid-template-columns:npm min-content 1fr min-content;
