@@ -7,6 +7,8 @@ import theme from "../styles/theme";
 
 
 /* Sidebar Stylings */
+
+
 const SideEmail = styled.aside`
 
 background-color:${theme.colors.navy};
@@ -27,14 +29,18 @@ const StickyTesting = styled.div`
  position: fixed;
   bottom: 0;
   right: 0;
-  padding-left:2em;
+  padding-right:4em;
   
 
 
 /* Position top, keep the sticky for the CONTENT! */ 
 `;
+/* 
+Anchor tag for contact details. Remake as a component possibly.
+Come back for the Animations Later. for now focus on the other contact tags. 
 
-const MailLink = styled.p`
+*/
+const MailLink = styled.a`
 font-size:14px;
 padding:30px;
 letter-spacing: 0.1em;
@@ -42,10 +48,12 @@ font-family:"SF Mono";
 font-weight:300;
 padding: 10px;
 writing-mode: vertical-rl;
-
+cursor: pointer;
+text-decoration:none;
+color:${theme.colors.lightSlate};
 &:hover{
-  color:${theme.colors.green};
-  transform: scale(1.1);
+ 
+
 };
 
 ::after
@@ -67,8 +75,8 @@ export default function Email() {
         <SideEmail>
 <StickyTesting>
 
-<MailLink>tommymaher10@gmail.com</MailLink>
 
+<MailLink href = "mailto: tommymaher10@gmail.com">tommymaher10@gmail.com</MailLink>
 
 
 

@@ -2,20 +2,13 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 
-/* Todo 
-
-Look at building components to be reused. 
-
-Cleanup needs to be done. 
-
-26/05/2020 
-- Tommy  
-*/
 
 
+// Initial Nav working 
 const Section = styled.section`
 background-color:${theme.colors.navy};
 block-size:100%;
+
 `;
 
 
@@ -23,11 +16,22 @@ block-size:100%;
 const FlexContainer = styled.div`
 display:flex;
 height:100%;
-border:2rem;
+border:1em;
 flex-direction:column;
-justify-content: flex-start;
-align-items:center;
-padding-bottom:5em;
+justify-content: center;
+align-items:flex-end;
+position:relative;
+top: -6em;
+
+
+@media (min-width: 768px){
+    top: -6em;
+    position:relative;
+
+    align-items:flex-end;
+    justify-content:flex-end;
+    };
+
 `;
 
 
@@ -76,7 +80,6 @@ margin-bottom: -1px;
 `; 
 const Paragraph = styled.p`
 align-self:center;
-
 width:50%;
 color:${theme.colors.slate};
 font-family:"Calibre";
@@ -104,7 +107,19 @@ padding: 1.25rem 1.75rem;
 line-height:1;
 margin-top:2em;
 `;
+
 /* Flex end Test here. */
+
+
+const MailLink = styled.a`
+color:${theme.colors.green};
+font-family:"SF Mono";
+font-size:${theme.fontSizes.sm};
+font-weight:400;
+text-decoration:none;
+`;
+
+
 
 
 export default class Contact extends Component {
@@ -113,7 +128,8 @@ export default class Contact extends Component {
      
            <Section>
              <FlexContainer>
-     <ContactHeading>Whats next?</ContactHeading>
+     <ContactHeading><a href name = "contact">Whats Next?
+     </a></ContactHeading>
 
         
                <SubHead>Get in touch</SubHead>
@@ -126,7 +142,7 @@ export default class Contact extends Component {
                
                </Paragraph>
 
-               <Hello>Say Hello </Hello>
+               <Hello><MailLink href = "mailto: tommymaher10@gmail.com">Say Hello</MailLink></Hello>
 
                </FlexContainer>
 

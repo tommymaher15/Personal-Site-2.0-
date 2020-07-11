@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
-
+import { FaGithubSquare,FaExternalLinkSquareAlt  } from 'react-icons/fa';
 //import Image from "./test.jpg";
 
 
@@ -45,16 +45,24 @@ flex-direction: column;
 background-color:${theme.colors.Navy};
 
 box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.3);
-padding: 20px;
+width: 100%;
+
+@media (min-width: 768px) {
+  
+  padding: 20px;
 width:60%;
-margin-left:8em;`;
+margin-left:8em;
+};
+
+`;
 
 const SkillList = styled.ul`
 display: flex;
 flex-wrap: wrap;
 padding: 0px;
 margin: 25px 0px 10px;
-list-style: outside none none;`;
+list-style: outside none none;
+align-content:flex-end;`;
 
 const SkillListItem = styled.li`
 padding-left:1em;
@@ -62,7 +70,8 @@ font-size: 13px;
 color: ${theme.colors.vLightSlate};
 margin-right: 20px;
 margin-bottom: 7px;
-white-space: nowrap;`;
+white-space: nowrap;
+;`;
 
 
 const Heading1 = styled.h4`font-size: 13px;
@@ -87,16 +96,23 @@ font-size: 18px;
 border-radius: 3px;
 box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
 background-color: ${theme.colors.lightNavy};
-width:33%;
+width:65%;
 align-content:center;
-justify-content:center;`;
+justify-content:center;
+
+
+@media (min-width: 768px){
+  
+  width:33%;};
+
+`;
 
 const HeadingTitle = styled.h3`
 ::before{
     counter-increment: section 2;
     content: "0" counter(section) ".";
     margin-right: 10px;
-    font-family: "Calibre";
+    font-family: "SF Mono";
     font-weight: 400;
     color:${theme.colors.green};
     font-size: 20px;
@@ -104,7 +120,9 @@ const HeadingTitle = styled.h3`
     padding-left:2em;
     };
 
-    ::after
+   
+    @media (min-width: 768px) {
+      ::after
     {
     content: "";
     display: block;
@@ -113,12 +131,19 @@ const HeadingTitle = styled.h3`
     background-color:#303c55;
     position: relative;
     top: -15px;
-    margin-left: 13.5em;
-    }
+    margin-left: 13.5em;}
+    };
 
-    font-size:32px;
+
+    
+    padding-left:-1em;
+    font-size:22px;
     font-weight: 600;
     color: ${theme.colors.vLightSlate};
+
+    @media (min-width: 768px) {font-size:30px;
+    font-weight: 600;
+    };
 `;
 
 const HeadingContainer = styled.div`
@@ -129,12 +154,36 @@ justify-content:center;
 
 `;
 
+const SocialList = styled.ul`
+display: flex;
+flex-wrap: nowrap;
+padding: 0px;
+margin: 25px 0px 10px;
+list-style: outside none none;
+justify-content:flex-end;
+align-content:flex-end;
+top: -8rem;`;
+
+const SocialListItem = styled.li`
+padding-left:1em;
+font-size: 24px;
+color: ${theme.colors.vLightSlate};
+margin-right: 1em;
+position:relative;
+top:-2.5em;
+white-space: nowrap;
+&:hover{
+  color:${theme.colors.green};
+  transform: scale(1.150);
+};
+`;
+
 export default class MyWork extends Component {
     render() {
         return (
            <Div>
              <HeadingContainer>
-           <HeadingTitle> Some things I've Built</HeadingTitle>
+           <HeadingTitle><a href name = "work">Some Things I've Built</a></HeadingTitle>
            </HeadingContainer>
               <GridContainer>
               <Card>
@@ -153,9 +202,20 @@ export default class MyWork extends Component {
               <SkillListItem>React</SkillListItem>
               <SkillListItem>HTML & CSS</SkillListItem>
               <SkillListItem>Coffee</SkillListItem>
-        
+              
          </SkillList>
 
+
+        <SocialList>
+        <SocialListItem>
+        <FaGithubSquare></FaGithubSquare>
+        </SocialListItem>
+
+        <SocialListItem>
+<FaExternalLinkSquareAlt ></FaExternalLinkSquareAlt>
+        </SocialListItem>
+       
+        </SocialList>
       
 
       

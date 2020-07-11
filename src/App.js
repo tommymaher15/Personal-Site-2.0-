@@ -6,14 +6,17 @@ import styled from '@emotion/styled';
 import Email from './layouts/Email';
 import Content from "./layouts/Content";
 import GlobalFonts from "./styles/fonts";
+//normalizing css. will come back to this for a better workaround later. 
   import './App.css';
+
+
 
 const Grid = styled.div`
  block-size: min(100vh);
  display:grid;
 
- grid-template-columns:npm min-content 1fr min-content;
- grid-template-rows:min-content 1fr min-content;
+ grid-template-columns: min-content 1fr min-content;
+ grid-template-rows:    min-content 1fr min-content;
  grid-template-areas:
 
  " header "
@@ -44,16 +47,9 @@ function App() {
   <GlobalFonts/>
 <Header />
 <Sidebar />
-
-
 <Content /> 
-
-
-
 <Email />
-
 <Footer />
-
 </Grid>
 
   );

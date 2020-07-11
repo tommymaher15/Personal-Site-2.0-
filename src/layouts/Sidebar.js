@@ -49,6 +49,7 @@ const SocialListItem = styled.li`
 font-size:24px;
 padding:30px;
 color: ${theme.colors.vLightSlate};
+cursor: pointer;
 &:hover{
   color:${theme.colors.green};
   transform: scale(1.150);
@@ -59,16 +60,20 @@ color: ${theme.colors.vLightSlate};
 
 `;
 
+const A = styled.a`
+text-decoration:none;
+`;
+
 export default function Sidebar() {
     return (
  
         <Sidebar1> 
-        
+       
         
         <StickyTesting>
         <SocialList> 
-        <SocialListItem><FaGithubSquare /></SocialListItem>
-        <SocialListItem><FaLinkedin /></SocialListItem>
+        <SocialListItem><A href="https://github.com/tommymaher15"><FaGithubSquare /></A></SocialListItem>
+        <SocialListItem><A href=" https://www.linkedin.com/in/tommymaher10/"><FaLinkedin /></A></SocialListItem>
         <SocialListItem><FaTwitterSquare /></SocialListItem>
        
         </SocialList>

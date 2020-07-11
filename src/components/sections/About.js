@@ -6,10 +6,7 @@ import Image from "./myimg.jpg";
 
 
 const Section = styled.section`
-
 background-color:${theme.colors.navy};
-
-
 block-size:100%;
 margin-bottom:4em;
 
@@ -17,13 +14,17 @@ margin-bottom:4em;
 
 
 const AboutHeader = styled.div`
-
-padding-left:2em;
-padding-top:2em; `;
+padding-left:0.5em;
+padding-top:2em; 
+`;
 
 const AboutHeading = styled.h3`
-margin-left:4em;
+@media (min-width: 768px){
+  margin-left:8em;
+   
 
+};
+margin-left:0.5em;
 font-family:"Calibre";
 font-size:32px;
 font-weight:600;
@@ -49,7 +50,7 @@ bottom: 4px;
 content: "";
 display: block;
 height: 1px;
-width: 300px;
+width: 5em;
 background-color: rgb(48, 60, 85);
 position: relative;
 top: -20px;
@@ -59,20 +60,26 @@ margin-left: 5.9em;
 `;
 
 const Container = styled.div` 
+ @media (min-width: 768px){
+   margin-left:10em;
+   width:100%;
 
-margin-left:10em;
+
+};
+margin-left:2em;
  display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
-  border:2rem;
+  width: 80%;
+  border:1rem;
+
 
 margin:2em;
 margin-bottom:8em;
 margin-top:3em;
-margin-left:14em;
+margin-left:1em;
 margin-right:2em;
 
 `;
@@ -85,15 +92,26 @@ font-weight:400;
 color:${theme.colors.slate};
 font-size:20px;
 margin-top:0;
+padding-left:2em;
 
 `;
 
 const ImgFlex = styled.div ` 
 
 position: relative;
-width: 40%;
+width:70%;
+max-width:400px;
+padding-left:2em;
+margin-left: 2em;
+padding-top:5em;
+
+@media (min-width: 768px){
+  width: 40%;
 max-width: 300px;
-margin-left: 60px;
+
+};
+
+
 `;
 
 /* Flex End */ 
@@ -127,8 +145,6 @@ color:${theme.colors.green};
  
  `;
 
-
-
 /* List Component End here */ 
 
 export default function About() {
@@ -136,7 +152,7 @@ export default function About() {
  <Section>
 <AboutHeader>
 
-<AboutHeading>About Me</AboutHeading>
+<AboutHeading><a href name = "about">About Me</a></AboutHeading>
 
 </AboutHeader>
 

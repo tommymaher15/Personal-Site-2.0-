@@ -4,36 +4,35 @@ import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 
 
-//custom styling
-/*const centerStyles = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-*/
 const Div = styled.section`
 
 background-color:${theme.colors.navy};
 
 block-size:100%;
-padding-bottom:6em;
 
-
+@media (min-width: 768px){
+    padding-bottom:6em;
+};
 
 `;
 
 const HeroContent = styled.div`
-margin-left:10em;
-font-family: "Calibre";
+
+
 display:flex;
 height:100%;
-border:2rem;
-justify-content: center;
+width:100%;
+padding-top:2em;
+padding-left:1em;
 flex-direction: column;
 align-items: flex-start;
-left:-200px;
 
 
+
+@media (min-width: 768px){
+    border:2rem;
+margin-left:10em;
+};
 
 
 `;
@@ -41,15 +40,16 @@ const Heading1 = styled.h1`
 
 color:${theme.colors.green};
 font-family:"SF Mono";
-font-size: clamp(0.5rem, 1vw + 1rem, 1.2rem);
+font-size: 1rem;
 font-weight:400;
-line-height: 1;
+
+
+@media (min-width: 768px){
+    line-height: 1;
 padding-bottom:0;
 padding-top:0;
 margin-bottom:0;
-
-
-
+};
 
 
 
@@ -59,26 +59,38 @@ const Heading2 = styled.h2`
 color:${theme.colors.vLightSlate};
 font-family:"Calibre";
 font-weight: 600;
-font-size: clamp(4rem, 1vw + 1rem, 5rem);
+font-size: 2.8rem;
 padding-bottom:0;
 padding-top:0;
 margin-bottom:0;
 border-bottom:0;
 line-height:1;
-margin-top:25;
+
+
+@media (min-width: 768px){
+    font-size: clamp(3rem, 2vw, 5rem);
+
+};
+
 `;
 
 const Heading3 = styled.h3`
 color:${theme.colors.lightSlate};
 font-family:"Calibre";
 font-weight:600;
-font-size: clamp(4rem, 1vw + 1rem, 5rem);
+font-size: 2.9rem;
 line-height:1;
 margin-top: 0px;
     margin-bottom: 30px;
     margin-right: 100px;
     border-right-width: 100px;
     border-top-width: 10px;
+    width:50%;
+
+    @media (min-width: 768px){
+    font-size: clamp(3rem, 2vw, 5rem);
+
+};
 
 
 `;
@@ -89,9 +101,8 @@ font-family:"Calibre";
 font-weight:400;
 font-size:${theme.fontSizes.xl};
 line-height:1.5;
-display: block;
-width: 50%;
-max-width: 500px;
+
+width: min(400px,40%);
 text-align:left;
 
 `;
@@ -124,6 +135,17 @@ margin-top:2em;
 `;
 
 
+const MailLink = styled.a`
+color:${theme.colors.green};
+
+font-family:"SF Mono";
+font-size:${theme.fontSizes.sm};
+
+font-weight:400;
+text-decoration:none;
+`;
+
+
 export default class Hero extends Component {
     render() {
         return (
@@ -137,9 +159,10 @@ export default class Hero extends Component {
         I am a Front end developer based in Dublin, Ireland specializing
         in building clean and robust products that solve your problems and look great. 
         </HeroP>
+     
       
 
-         <HeroBtn>Get in touch </HeroBtn>
+         <HeroBtn><MailLink href = "mailto: tommymaher10@gmail.com">Get in Touch</MailLink></HeroBtn>
            </HeroContent>
             </Div>
           

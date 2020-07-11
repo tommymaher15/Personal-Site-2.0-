@@ -22,6 +22,7 @@ bottom:0;
 
 const SocialList = styled.ul`
 list-style-type:none;
+align-content:center;
 @media(min-width: 768px){
     display:none;
 }
