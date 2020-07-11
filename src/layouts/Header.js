@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{ useState,useRef } from 'react';
 import styled from '@emotion/styled';
 import theme from "../styles/theme";
 import Navbar from '../components/Nav/Menu/Navbar';
 import Burger from "../components/Nav/Burger/Burger";
-
+import { useOnClickOutside } from '../Hooks';
 
 const HeadBar = styled.header`
     width:100%;
@@ -21,11 +21,26 @@ const HeadBar = styled.header`
 
 
 
-export default function Header() {
+export default function Header()
+
+
+{
+    const [open, setOpen] = useState(false);
+    const node = useRef();
+    useOnClickOutside(node, () => setOpen(false));
+
+
+
+
+
     return (
    <HeadBar>
-<Navbar />
-<Burger></Burger>
+
+   <div ref={node}>
+<Navbar open={open} setOpen={setOpen}/>
+<Burger open={open} setOpen={setOpen}/>
+</div>
+
 </HeadBar>
     )
-}
+};

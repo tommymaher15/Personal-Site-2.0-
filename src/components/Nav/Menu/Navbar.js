@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyledNav} from './Navbar.styled';
+import { bool } from 'prop-types';
 
-const Navbar = () => {
+
+const Navbar = ({ open }) => {
   return (
 
     /* Open and close functionality tomorrow. 
@@ -16,7 +18,7 @@ const Navbar = () => {
       Almost there LOL 
 
     */ 
-    <StyledNav>
+    <StyledNav open={open}>
    
       <a href="#about">
 
@@ -32,5 +34,9 @@ const Navbar = () => {
         </a>
     </StyledNav>
   )
+}
+
+Navbar.propTypes = {
+  open: bool.isRequired,
 }
 export default Navbar;

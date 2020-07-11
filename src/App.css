@@ -18,4 +18,27 @@ Unsure what the problem is here, I've tried removing overflow but, then I couldn
 Will come back to this in the morning. 
 */
 
+* unvisited link */
+a:link {
+  color: inherit;
+}
 
+/* visited link */
+a:visited {
+  color:inherit;
+}
+
+/* mouse over link */
+a:hover {
+  color: inherit;
+}
+
+/* selected link */
+a:active {
+  color: inherit;
+}
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

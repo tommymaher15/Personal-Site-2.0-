@@ -4,7 +4,7 @@ import theme from '../../../styles/theme';
 
 
 export const StyledNav = styled.nav`
-  transform: translateX(100%);
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   display: flex;
   flex-direction: column;
   justify-content: center;
