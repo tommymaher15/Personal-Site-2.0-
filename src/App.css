@@ -1,22 +1,13 @@
-html,body
-{
-  scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border:0px;
-    overflow-x: hidden; 
+
+html{  margin: 0px;
+  padding: 0px;
+  border:0px;
+  overflow-x:hidden;
    
-    border-width: 0px;
-}
 
-/* Overflow problem 11/07/2020.
+ border-width: 0px;
 
-Unsure what the problem is here, I've tried removing overflow but, then I couldn't scroll. 
-
-Will come back to this in the morning. 
-*/
+};
 
 * unvisited link */
 a:link {
@@ -38,7 +29,6 @@ a:active {
   color: inherit;
 }
 
-
-*, *::after, *::before {
+* {
   box-sizing: border-box;
-}
+  }      

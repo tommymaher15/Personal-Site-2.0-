@@ -10,7 +10,6 @@ import theme from "../styles/theme";
 
 
 const SideEmail = styled.aside`
-
 background-color:${theme.colors.navy};
     color:${theme.colors.vLightSlate};
 grid-area: email;
@@ -46,7 +45,6 @@ padding:30px;
 letter-spacing: 0.1em;
 font-family:"SF Mono";
 font-weight:300;
-padding: 10px;
 writing-mode: vertical-rl;
 cursor: pointer;
 text-decoration:none;

@@ -19,15 +19,17 @@ const Navbar = ({ open }) => {
 
     */ 
     <StyledNav open={open}>
-   
+
       <a href="#about">
 
         About 
       </a>
+
       <a href="#work">
        
     My Work
         </a>
+        
       <a href="#contact">
         
         Contact 

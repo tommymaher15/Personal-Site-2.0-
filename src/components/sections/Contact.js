@@ -15,8 +15,8 @@ block-size:100%;
 /* Flex container testing Starts here */ 
 const FlexContainer = styled.div`
 display:flex;
-height:100%;
-border:1em;
+height:auto;
+
 flex-direction:column;
 justify-content: center;
 align-items:flex-end;
@@ -27,7 +27,6 @@ top: -6em;
 @media (min-width: 768px){
     top: -6em;
     position:relative;
-
     align-items:flex-end;
     justify-content:flex-end;
     };

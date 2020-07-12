@@ -11,11 +11,6 @@ const HeadBar = styled.header`
     grid-area: header;
     block-size: min(10vh);
     background-color:${theme.colors.navy};
-    
-
- 
-
-  
 `;
 
 
@@ -24,7 +19,18 @@ const HeadBar = styled.header`
 export default function Header()
 
 
-{
+{   
+
+    /* Sets the default state of the navigation/burger to closed.
+
+   
+
+
+
+
+
+    
+    open = false */
     const [open, setOpen] = useState(false);
     const node = useRef();
     useOnClickOutside(node, () => setOpen(false));
@@ -34,12 +40,13 @@ export default function Header()
 
 
     return (
+    
    <HeadBar>
-
-   <div ref={node}>
+  
+  <div ref={node}>
 <Navbar open={open} setOpen={setOpen}/>
 <Burger open={open} setOpen={setOpen}/>
-</div>
+ </div>
 
 </HeadBar>
     )

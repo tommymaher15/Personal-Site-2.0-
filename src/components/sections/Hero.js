@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 import theme from '../../styles/theme';
 
-
+// BORDER BOX + all the padding! is ruining the website! Take away the padding bro!
 const Div = styled.section`
 
 background-color:${theme.colors.navy};
@@ -11,7 +11,7 @@ background-color:${theme.colors.navy};
 block-size:100%;
 
 @media (min-width: 768px){
-    padding-bottom:6em;
+    
 };
 
 `;
@@ -21,7 +21,7 @@ const HeroContent = styled.div`
 
 display:flex;
 height:100%;
-width:100%;
+   /*width:100%; */
 padding-top:2em;
 padding-left:1em;
 flex-direction: column;

@@ -62,7 +62,7 @@ margin-left: 5.9em;
 const Container = styled.div` 
  @media (min-width: 768px){
    margin-left:10em;
-   width:100%;
+   /*width:100%; */
 
 
 };

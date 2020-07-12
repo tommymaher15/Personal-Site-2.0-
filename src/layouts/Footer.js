@@ -37,6 +37,8 @@ padding:30px;
 color: ${theme.colors.vLightSlate};
 &:hover{
   color:${theme.colors.green};
+
+  /* Come back to this for the styling remember!!! */ 
   transform: scale(1.150);
 };
 

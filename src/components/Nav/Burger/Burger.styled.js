@@ -1,13 +1,14 @@
-// Burger.styled.js
 import styled from 'styled-components';
-import theme from '../../../styles/theme';
+import theme from "../../../styles/theme";
 
+
+/* THIS WORKS. LEAVE IT THE FUCK ALONE */ 
 
 
 export const StyledBurger = styled.button`
   position: absolute;
   top: 5%;
-  right: 3rem;
+  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -18,34 +19,26 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  
-  &:focus {
-    outline: none;
-  }
- 
-  
   div {
     width: 2rem;
     height: 0.25rem;
-    background:${theme.colors.vLightSlate};
-    border-radius: 10px;
+    background: ${theme.colors.vLightSlate};
+
+    border-radius: 2em;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-
-      
+    /* Hamburger here. */
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
-
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
+
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
-
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
-
   }
 `;
