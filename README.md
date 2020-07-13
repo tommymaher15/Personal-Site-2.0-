@@ -1,4 +1,5 @@
-The second Iteraion of my personal website. Built with ReactJS. 
+The Second Iteration of my personal website. Build with ReactJS.
+
 
 Feel free to fork and make it your own! 
 
