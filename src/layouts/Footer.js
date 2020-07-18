@@ -12,7 +12,7 @@ bottom:0;
  grid-column: 1 / 4;
  grid-area: footer;
  width:100%;
-  block-size: min(10vh);
+  height:10vh;
     background-color:${theme.colors.darkNavy};
     color:${theme.colors.vLightSlate};
     ${mixin.centerStyles};

@@ -31,13 +31,13 @@ Open navigation  prop type. Dig into this a bit more today.
   flex-direction: column;
   justify-content: center;
   background: ${theme.colors.darkNavy};
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
+  overflow:hidden;
   height: 100vh;
   text-align: right;
   padding: 2rem;
-  position: absolute;
-
-  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  transition: transform 0.300ms ease-in-out;
 
 
   top: 0;
@@ -49,7 +49,7 @@ Open navigation  prop type. Dig into this a bit more today.
  
   /* */ 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 50%;
     
   }
 

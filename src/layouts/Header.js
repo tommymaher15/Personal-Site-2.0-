@@ -13,7 +13,14 @@ const HeadBar = styled.header`
     background-color:${theme.colors.navy};
 `;
 
+const Logo = styled.div`
+color:white;
+font-size:4em;
 
+top:5%;
+left:2em;
+
+`;
 
 
 export default function Header()
@@ -42,6 +49,10 @@ export default function Header()
     return (
     
    <HeadBar>
+
+<Logo>Nav </Logo>
+
+
   
   <div ref={node}>
 <Navbar open={open} setOpen={setOpen}/>

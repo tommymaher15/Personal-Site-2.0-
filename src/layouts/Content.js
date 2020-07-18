@@ -12,7 +12,7 @@ grid-area:main;
 
 const Div = styled.div`
  display:grid;
- width:100%;
+
  grid-template-columns:1fr;
  grid-template-rows: repeat(4, 1fr);
 `;

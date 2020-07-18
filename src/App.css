@@ -1,10 +1,9 @@
 
-html{  margin: 0px;
+html
+{  margin: 0px;
   padding: 0px;
   border:0px;
   overflow-x:hidden;
-   
-
  border-width: 0px;
 
 };
@@ -31,4 +30,6 @@ a:active {
 
 * {
   box-sizing: border-box;
+  
+  
   }      

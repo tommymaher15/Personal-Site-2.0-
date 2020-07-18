@@ -16,10 +16,7 @@ const Grid = styled.div`
  block-size: min(100vh);
  display:grid;
 
- 
- grid-template-rows:    min-content 1fr min-content;
  grid-template-areas:
-
  " header "
  "  main  "
  " footer ";
