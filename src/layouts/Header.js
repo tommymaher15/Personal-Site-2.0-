@@ -37,8 +37,12 @@ export default function Header()
 
 
     
-    open = false */
+    /*Use state.
+    Create an initial variable, variable to hold state = hook. 
+    
+    */ 
     const [open, setOpen] = useState(false);
+    
     const node = useRef();
     useOnClickOutside(node, () => setOpen(false));
 

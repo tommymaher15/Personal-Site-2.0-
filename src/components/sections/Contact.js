@@ -15,17 +15,15 @@ block-size:100%;
 /* Flex container testing Starts here */ 
 const FlexContainer = styled.div`
 display:flex;
-height:auto;
-
 flex-direction:column;
-justify-content: center;
-align-items:flex-end;
+justify-content: flex-end;
+align-items:center;
 position:relative;
-top: -6em;
+top: 20em;
 
 
 @media (min-width: 768px){
-    top: -6em;
+    top: 11em;
     position:relative;
     align-items:flex-end;
     justify-content:flex-end;
@@ -66,8 +64,6 @@ bottom: 4px;
 const SubHead = styled.h4`
 
 align-self:center;
-
-
 color:${theme.colors.vLightSlate};
 font-family:"Calibre";
 font-weight: 600;
@@ -127,8 +123,10 @@ export default class Contact extends Component {
      
            <Section>
              <FlexContainer>
-     <ContactHeading><a href name = "contact">Whats Next?
-     </a></ContactHeading>
+
+     <ContactHeading>
+     <a href name = "contact">Whats Next?</a>
+     </ContactHeading>
 
         
                <SubHead>Get in touch</SubHead>
