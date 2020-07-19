@@ -6,6 +6,8 @@ import theme from "../../../styles/theme";
 
 
 export const StyledBurger = styled.button`
+    outline: none;
+    box-shadow: none;
   position: absolute;
   top: 5%;
   right: 2rem;
