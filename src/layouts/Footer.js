@@ -33,7 +33,7 @@ align-content:center;
 const SocialListItem = styled.li`
 display:inline-block;
 font-size:24px;
-padding:30px;
+padding-left:30px;
 color: ${theme.colors.vLightSlate};
 &:hover{
   color:${theme.colors.green};
