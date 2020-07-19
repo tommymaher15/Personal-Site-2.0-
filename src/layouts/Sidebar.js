@@ -28,6 +28,8 @@ const StickyTesting = styled.div`
 const SocialList = styled.ul`
 
 transform: rotate(360deg);
+position: relative;
+    top: 1em;
 
 padding-right:1em;
 list-style-type:none;

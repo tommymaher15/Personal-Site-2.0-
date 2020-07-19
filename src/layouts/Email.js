@@ -42,12 +42,15 @@ Come back for the Animations Later. for now focus on the other contact tags.
 const MailLink = styled.a`
 font-size:14px;
 padding:30px;
-letter-spacing: 0.1em;
+letter-spacing: 0.2em;
 font-family:"SF Mono";
 font-weight:300;
 writing-mode: vertical-rl;
 cursor: pointer;
 text-decoration:none;
+
+position: relative;
+    top: 2em;
 color:${theme.colors.lightSlate};
 &:hover{
  
@@ -59,7 +62,7 @@ color:${theme.colors.lightSlate};
 content: "";
 display: inline-block;
 width: 1px;
-height: 11vh;
+height: 10vh;
 margin-top:1.5em;
 background-color: rgb(168, 178, 209);
 }
