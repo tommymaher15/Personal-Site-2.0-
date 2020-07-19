@@ -10,9 +10,7 @@ background-color:${theme.colors.navy};
 
 block-size:100%;
 
-@media (min-width: 768px){
-    
-};
+
 
 `;
 
@@ -22,7 +20,7 @@ const HeroContent = styled.div`
 display:flex;
 height:100%;
    /*width:100%; */
-padding-top:2em;
+   padding-top:4em;
 padding-left:1em;
 flex-direction: column;
 align-items: flex-start;
@@ -32,6 +30,7 @@ align-items: flex-start;
 @media (min-width: 768px){
     border:2rem;
 margin-left:10em;
+
 };
 
 
@@ -104,6 +103,10 @@ line-height:1.5;
 
 width: min(400px,40%);
 text-align:left;
+@media (max-width: 768px){
+   width:60%;
+
+
 
 `;
 
