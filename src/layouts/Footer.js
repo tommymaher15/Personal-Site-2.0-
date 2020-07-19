@@ -23,6 +23,7 @@ bottom:0;
 const SocialList = styled.ul`
 list-style-type:none;
 align-content:center;
+justify-content:center;
 @media(min-width: 768px){
     display:none;
 }
@@ -33,7 +34,7 @@ align-content:center;
 const SocialListItem = styled.li`
 display:inline-block;
 font-size:24px;
-padding-left:30px;
+padding-left:60px;
 color: ${theme.colors.vLightSlate};
 &:hover{
   color:${theme.colors.green};
