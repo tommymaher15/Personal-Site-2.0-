@@ -50,7 +50,7 @@ cursor: pointer;
 text-decoration:none;
 
 position: relative;
-    top: 2em;
+    top: 2.1em;
 color:${theme.colors.lightSlate};
 &:hover{
  
@@ -62,8 +62,8 @@ color:${theme.colors.lightSlate};
 content: "";
 display: inline-block;
 width: 1px;
-height: 10vh;
-margin-top:1.5em;
+height: 9.4vh;
+margin-top:2.4em;
 background-color: rgb(168, 178, 209);
 }
 
