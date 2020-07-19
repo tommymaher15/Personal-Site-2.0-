@@ -94,6 +94,12 @@ font-size:20px;
 margin-top:0;
 padding-left:2em;
 
+@media (max-width: 768px){
+
+  width:90%;
+  max-width:550px;
+};
+
 `;
 
 const ImgFlex = styled.div ` 
@@ -131,6 +137,10 @@ max-width: 300px;
 const SkillList = styled.ul`
 display:grid;
 grid-template-columns: repeat(2, minmax(140px,200px));
+@media (max-width: 768px){
+
+
+};
 
 `;
  const SkillItem = styled.li`
