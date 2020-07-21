@@ -25,15 +25,14 @@ top: 20em;
 @media (min-width: 768px){
     top: 11em;
     position:relative;
-    align-items:flex-end;
-    justify-content:flex-end;
+  
     };
 
 `;
 
 
 const ContactHeading = styled.h3`
-/* What next? */
+
 align-self:center;
 color:${theme.colors.green};
 font-family:"SF Mono";
@@ -42,21 +41,6 @@ font-weight:400;
 
 
 
-::before
-{
-    
-counter-increment: section 3;
-/* come back to this for navigation? */ 
-content: "0" counter(section) ".";
-margin-right: 10px;
-font-family: "SF Mono";
-font-weight: normal;
-font-size:32px;
-color: rgb(100, 255, 218);
-font-size: 20px;
-position: relative;
-bottom: 4px;
-};
 
 `;
 
@@ -81,15 +65,12 @@ font-family:"Calibre";
 font-weight:400;
 font-size:${theme.fontSizes.xl};
 line-height:1.5;
-
-
 max-width: 500px;
 
 `;
 /* Button Component */ 
-const Hello = styled.button`
+const Btn = styled.button`
 align-self:center;
-width:25%;
 color:${theme.colors.green};
 background-color:transparent;
 font-family:"SF Mono";
@@ -101,15 +82,31 @@ border-radius: 3px;
 padding: 1.25rem 1.75rem;
 line-height:1;
 margin-top:2em;
+outline: none;
+cursor: pointer;
+
+
+  
+
+&:hover {
+/* come back to this!! */
+  background-color:${theme.colors.green};
+  color:${theme.colors.navy};
+}
+
+
+
 `;
 
 /* Flex end Test here. */
 
 
-const MailLink = styled.a`
+const A = styled.a`
 color:${theme.colors.green};
+
 font-family:"SF Mono";
 font-size:${theme.fontSizes.sm};
+
 font-weight:400;
 text-decoration:none;
 `;
@@ -139,7 +136,7 @@ export default class Contact extends Component {
                
                </Paragraph>
 
-               <Hello><MailLink href = "mailto: tommymaher10@gmail.com">Say Hello</MailLink></Hello>
+               <A href = "mailto: tommymaher10@gmail.com"><Btn>Say Hello</Btn></A>
 
                </FlexContainer>
 
