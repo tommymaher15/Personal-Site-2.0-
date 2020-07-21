@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled';
 
 import theme from '../../styles/theme';
-
+import Button from '../Buttons/Button';
 // BORDER BOX + all the padding! is ruining the website! Take away the padding bro!
 const Div = styled.section`
 
@@ -107,46 +107,10 @@ text-align:left;
    width:60%;
 
 
-
-`;
-
-const HeroBtn = styled.button`
-color:${theme.colors.green};
-background-color:transparent;
-font-family:"SF Mono";
-font-size:${theme.fontSizes.sm};
-
-font-weight:400;
-border: 1px solid ${theme.colors.green};
-border-radius: 3px;
-padding: 1.25rem 1.75rem;
-line-height:1;
-margin-top:2em;
-
-
-
-  
-
-&:hover {
-/* come back to this!! */
-  color:red;
 }
-
-
-
-
 `;
 
 
-const MailLink = styled.a`
-color:${theme.colors.green};
-
-font-family:"SF Mono";
-font-size:${theme.fontSizes.sm};
-
-font-weight:400;
-text-decoration:none;
-`;
 
 
 export default class Hero extends Component {
@@ -165,7 +129,7 @@ export default class Hero extends Component {
      
       
 
-         <HeroBtn><MailLink href = "mailto: tommymaher10@gmail.com">Get in Touch</MailLink></HeroBtn>
+     <Button />
            </HeroContent>
             </Div>
           
