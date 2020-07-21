@@ -53,7 +53,7 @@ position: relative;
     top: 2.1em;
 color:${theme.colors.lightSlate};
 &:hover{
- 
+ color:${theme.colors.green};
 
 };
 
