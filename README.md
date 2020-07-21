@@ -8,28 +8,19 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 
-##colors used
+## Colors Used
+
 - ![#010215](https://via.placeholder.com/15/f03c15/000000?text=+) `#010215`
 - ![#172a45](https://via.placeholder.com/15/c5f015/000000?text=+) `#172a45`
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
- ![#8892b0](https://via.placeholder.com/15/1589F0/000000?text=+)  `#8892b0`
- ![#a8b2d1](https://via.placeholder.com/15/1589F0/000000?text=+) `#a8b2d1`
-  !#ccd6f6](https://via.placeholder.com/15/1589F0/000000?text=+) `#ccd6f6`
+- ![#8892b0](https://via.placeholder.com/15/1589F0/000000?text=+)  `#8892b0`
+-  ![#a8b2d1](https://via.placeholder.com/15/1589F0/000000?text=+) `#a8b2d1`
+-   ![#ccd6f6](https://via.placeholder.com/15/1589F0/000000?text=+) `#ccd6f6`
+-   ![#e6f1ff](https://via.placeholder.com/15/1589F0/000000?text=+) `#e6f1ff`
+ -   ![#0077B6](https://via.placeholder.com/15/1589F0/000000?text=+) `#0077B6`
+ 
+ 
  
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
-
-
-
-
-
-
-
-        #303C55'
-        '#8892b0'
-     '#a8b2d1'
-     '#ccd6f6'
-       '#e6f1ff'
-     '#0077B6'
