@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 import { FaGithubSquare,FaExternalLinkSquareAlt  } from 'react-icons/fa';
-
-
-
+//import Image from "./project1.png";
+//
 
 
 const Card = styled.div`
@@ -18,7 +17,7 @@ width: 100%;
 @media (min-width: 768px) {
   
   padding: 20px;
-width:60%;
+width:70%;
 margin-left:8em;
 };
 
@@ -86,7 +85,9 @@ margin: 25px 0px 10px;
 list-style: outside none none;
 justify-content:flex-end;
 align-content:flex-end;
-top: -8rem;`;
+top: -8rem;
+position:relative;
+top:3em;`;
 
 const SocialListItem = styled.li`
 padding-left:1em;
@@ -118,16 +119,15 @@ export default class ProjectCard1 extends Component {
         
             <Heading1>Featured Project</Heading1>
             <Heading2>My Personal Website</Heading2>
-  
+            
   
    <Paragraph>
-   <p>Built with React, This project was such a learning experience for me. 
-   I kept the design simple and will be iterating on it constantly overtime.
-    This will be a place for me to showcase all my work going forward!
+       
+   <p>A more lightweight and minimal iteration of my website. Built with ReactJs and hosted on Netlify.
     </p>
   
    </Paragraph>
-  
+   
             <SkillList>
             
                 <SkillListItem>React</SkillListItem>
@@ -135,7 +135,7 @@ export default class ProjectCard1 extends Component {
                 <SkillListItem>Javascript(ES6)</SkillListItem>
                 
            </SkillList>
-  
+   
   
           <SocialList>
           <SocialListItem>
@@ -144,12 +144,13 @@ export default class ProjectCard1 extends Component {
   
           <SocialListItem>
           
-          <A href=""> <FaExternalLinkSquareAlt/></A>
+          <A href="https://clever-nightingale-170988.netlify.app/"> <FaExternalLinkSquareAlt/></A>
           </SocialListItem>
          
           </SocialList>
+         
         
-  
+          
         
         </Card>
         )

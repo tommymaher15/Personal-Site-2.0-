@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import mixin from '../styles/mixin';
 import theme from '../styles/theme';
 import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
@@ -15,15 +14,17 @@ bottom:0;
  block-size: min(10vh);
     background-color:${theme.colors.darkNavy};
     color:${theme.colors.vLightSlate};
-    ${mixin.centerStyles};
-  
+    display:flex;
+    align-content:center;
+justify-content:center;
+
 `;
 
 
 const SocialList = styled.ul`
 list-style-type:none;
-align-content:center;
-justify-content:center;
+
+
 @media(min-width: 768px){
     display:none;
 }
@@ -33,14 +34,15 @@ justify-content:center;
 
 const SocialListItem = styled.li`
 display:inline-block;
+align-self:center;
+justify-self:center;
 font-size:24px;
-padding-left:60px;
+padding-left:1em;
 color: ${theme.colors.vLightSlate};
 &:hover{
   color:${theme.colors.green};
 
-  /* Come back to this for the styling remember!!! */ 
-  transform: scale(1.150);
+ 
 };
 
 `;

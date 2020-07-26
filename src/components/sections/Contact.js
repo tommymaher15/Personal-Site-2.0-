@@ -7,7 +7,7 @@ import theme from '../../styles/theme';
 // Initial Nav working 
 const Section = styled.section`
 background-color:${theme.colors.navy};
-block-size:100%;
+
 
 `;
 

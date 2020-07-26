@@ -9,7 +9,7 @@ import ProjectCard2 from "../ProjectCards/ProjectCard2";
 const Div = styled.section`
 
 background-color:${theme.colors.navy};
-block-size:100%;
+
 
 `;
 /*OverArching Grid Container.

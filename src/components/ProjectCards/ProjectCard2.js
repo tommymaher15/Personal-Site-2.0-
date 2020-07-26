@@ -17,7 +17,7 @@ width: 100%;
 
 @media (min-width: 768px) {
   padding: 20px;
-width:60%;
+width:70%;
 margin-left:8em;
 };
 `;
@@ -104,7 +104,10 @@ list-style: outside none none;
 justify-content:flex-end;
 align-content:flex-end;
 top: -8rem;
-align-self:flex-start`;
+align-self:flex-start;
+position:relative;
+top:3em;
+`;
 
 const SocialListItem = styled.li`
 padding-left:1em;
@@ -124,7 +127,14 @@ const A = styled.a`
 
 text-decoration:none;
 color:inherit;
+
 `;
+
+const Anc = styled.a`
+color:${theme.colors.green};
+text-decoration:none;
+`;
+
 
 /* Reverse the Content. Think this one through.*/ 
 
@@ -139,7 +149,7 @@ export default class ProjectCard1 extends Component {
   
   
    <Paragraph>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor est, rutrum nec vulputate at, condimentum eget dui. Etiam imperdiet nibh enim, ut viverra orci porta sit amet. In sit amet auctor dui. Aenean nibh.
+   <p>Currently working on this project but feel free to check out my <Anc href ="https://twitter.com/TommyMa88163906">Twitter</Anc> for more information about it!
     </p>
   
    </Paragraph>
@@ -147,7 +157,7 @@ export default class ProjectCard1 extends Component {
             <SkillList>
             
                 <SkillListItem>React</SkillListItem>
-                <SkillListItem>HTML & CSS</SkillListItem>
+                <SkillListItem>Coffee</SkillListItem>
                 <SkillListItem>Javascript(ES6)</SkillListItem>
                 
            </SkillList>

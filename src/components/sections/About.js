@@ -7,8 +7,8 @@ import Image from "./myimg.jpg";
 
 const Section = styled.section`
 background-color:${theme.colors.navy};
-block-size:100%;
-margin-bottom:4em;
+
+
 
 `;
 
@@ -168,7 +168,7 @@ export default function About() {
 
 <Container>
 <TextFlex>
- <p>Hi! I'm Tommy, I'm a front end  engineer from Dublin, Ireland.</p> 
+ <p>Hi! I'm Tommy, I'm a front-end developer from Dublin, Ireland.</p> 
 
  <p>
  I enjoy creating things that exist online, Whether it is a website, application or anything in between.
