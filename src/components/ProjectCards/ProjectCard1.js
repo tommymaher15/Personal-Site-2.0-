@@ -87,7 +87,8 @@ justify-content:flex-end;
 align-content:flex-end;
 top: -8rem;
 position:relative;
-top:3em;`;
+top:3em;
+`;
 
 const SocialListItem = styled.li`
 padding-left:1em;
@@ -97,10 +98,12 @@ margin-right: 1em;
 position:relative;
 top:-2.5em;
 white-space: nowrap;
+
 &:hover{
   color:${theme.colors.green};
   transform: scale(1.150);
 };
+
 `;
 
 const A = styled.a`

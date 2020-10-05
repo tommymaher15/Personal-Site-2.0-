@@ -111,6 +111,17 @@ padding-left:2em;
 margin-left: 2em;
 padding-top:5em;
 
+
+::after{
+
+  height:inherit;
+    display: block;
+    width: 100%;
+    background: #808080;
+    border-right: 1px white;
+    content: '';
+};
+
 @media (min-width: 768px){
   width: 40%;
 max-width: 300px;
@@ -128,9 +139,12 @@ max-width: 300px;
   height: auto;
   position:relative;
   bottom:4em;
-  
+
+
   `;
-  
+  const ImgOverlay = styled.div`
+ 
+`;
 
 
 /* List component eventually */
@@ -191,7 +205,9 @@ export default function About() {
 
 </TextFlex>
 <ImgFlex>
+<ImgOverlay>
     <AboutImg src={Image} alt =""></AboutImg>
+    </ImgOverlay>
 </ImgFlex>
 
 

@@ -119,7 +119,7 @@ export default class Hero extends Component {
             <Div>
             <HeroContent>
        <Heading1> Hi, my name is  </Heading1>
-       <Heading2> Tommy Maher.</Heading2>
+       <Heading2> Tommy Maher <span role="img" aria-label="waving-hand">👋</span></Heading2>
        <Heading3>I solve problems using code.</Heading3>
        
        <HeroP>
