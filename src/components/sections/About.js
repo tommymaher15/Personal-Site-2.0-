@@ -193,7 +193,7 @@ export default function About() {
   <p> Here are some technologies I've been working with recently:</p>
   <SkillList>
     
-   <SkillItem>Html & CSS</SkillItem>
+   <SkillItem>RESTful APIS</SkillItem>
    <SkillItem>React</SkillItem>
    <SkillItem>JavaScript (ES6+)</SkillItem>
    <SkillItem>Styled Components</SkillItem>

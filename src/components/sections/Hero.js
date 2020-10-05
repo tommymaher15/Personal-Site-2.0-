@@ -140,11 +140,12 @@ export default class Hero extends Component {
             <Div>
             <HeroContent>
        <Heading1> Hi, my name is  </Heading1>
+    
        <Heading2> Tommy Maher <Wave role="img" aria-label="waving-hand">👋</Wave></Heading2>
        <Heading3>I solve problems using code.</Heading3>
        
        <HeroP>
-        I am a front-end developer based in Dublin, Ireland specializing
+        I am a frontend developer based in Dublin, Ireland specializing
         in building clean and robust products that solve your problems and look great. 
         </HeroP>
      
