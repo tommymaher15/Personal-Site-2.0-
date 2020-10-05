@@ -19,7 +19,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 -  ![#a8b2d1](https://via.placeholder.com/15/a8b2d1/000000?text=+) `#a8b2d1`
 -   ![#ccd6f6](https://via.placeholder.com/15/ccd6f6/000000?text=+) `#ccd6f6`
 -   ![#e6f1ff](https://via.placeholder.com/15/e6f1ff/000000?text=+) `#e6f1ff`
- -   ![#0077B6](https://via.placeholder.com/15/0077B6/000000?text=+) `#0077B6`
+ -   ![#64FFDA](https://via.placeholder.com/15/64FFDA/000000?text=+) `#64FFDA`
  
  
  
