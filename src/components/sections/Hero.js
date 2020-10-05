@@ -110,7 +110,28 @@ text-align:left;
 }
 `;
 
+ 
+const Wave = styled.span`
 
+
+animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+`;
 
 
 export default class Hero extends Component {
@@ -119,7 +140,7 @@ export default class Hero extends Component {
             <Div>
             <HeroContent>
        <Heading1> Hi, my name is  </Heading1>
-       <Heading2> Tommy Maher <span role="img" aria-label="waving-hand">👋</span></Heading2>
+       <Heading2> Tommy Maher <Wave role="img" aria-label="waving-hand">👋</Wave></Heading2>
        <Heading3>I solve problems using code.</Heading3>
        
        <HeroP>
