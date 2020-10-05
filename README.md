@@ -26,11 +26,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-                 '#010215',
-    lightNavy:   '#172a45',
-    vLightNavy:  '#303C55',
-    slate:       '8892b0',
-    lightSlate:  '#a8b2d1',
-    vLightSlate: '#ccd6f6',
-    white:       '#e6f1ff',
-    green:      '#0077B6'
+
+Got any questions and want to reach out? Feel free to hit me up on Twitter or Linkedi :rocket:
+
+Twitter:
+https://twitter.com/TommyMa88163906
+
+LinkedIn:https://www.linkedin.com/in/tommymaher10/
