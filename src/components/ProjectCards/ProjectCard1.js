@@ -1,63 +1,80 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
-import { FaGithubSquare,FaExternalLinkSquareAlt  } from 'react-icons/fa';
-//import Image from "./project1.png";
+
+import Socials from "../Icons/Socials";
 //
+
+
+
+
+
+
+export default class ProjectCard1 extends Component {
+    render() {
+        return (
+            <Card>
+               <CardContent>
+               <h4>Featured Project</h4>
+               <h5>Coming soon!</h5>
+                <p>Currently working on this project but feel free to check out my
+                  <a href ="https://twitter.com/TommyMa88163906"> Twitter </a>
+                for more information about it!
+               </p>
+  
+               <ul>
+                 <li>React</li>
+                 <li>RESTful Api</li>
+                 <li>Javascript(ES6)</li>
+                
+               </ul>
+            <Socials />
+          </CardContent>
+        </Card>
+        )
+    }
+}
+
+
+
 
 
 const Card = styled.div`
  display: flex;
 flex-direction: column;
+justify-content: flex-start;
 background-color:${theme.colors.Navy};
-
 box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.3);
 width: 100%;
 
 @media (min-width: 768px) {
-  
   padding: 20px;
 width:70%;
 margin-left:8em;
 };
-
 `;
 
-const SkillList = styled.ul`
-display: flex;
-flex-wrap: wrap;
-padding: 0px;
-margin: 25px 0px 10px;
-list-style: outside none none;
-align-content:flex-end;`;
 
-const SkillListItem = styled.li`
-padding-left:1em;
-font-size: 13px;
-color: ${theme.colors.vLightSlate};
-margin-right: 20px;
-margin-bottom: 7px;
-white-space: nowrap;
-;`;
+const CardContent = styled.div`
 
 
-const Heading1 = styled.h4`font-size: 13px;
+h4{
+  font-size: 13px;
 font-weight: normal;
 color: ${theme.colors.green};
 font-family: "SF Mono";
 font-weight:400;
 margin-top: 10px;
-padding-top: 0px;`;
+padding-top: 0px;}
 
-const Heading2= styled.h5`
-font-size: 28px;
+h5{font-size: 28px;
 margin: 0px 0px 20px;
 color:${theme.colors.vLightSlate};
 font-family:"Calibre";
-font-weight:600;
-`;
+font-weight:600;}
 
-const Paragraph = styled.div`padding: 25px;
+
+p{padding: 25px;
 color: rgb(168, 178, 209);
 font-size: 18px;
 border-radius: 3px;
@@ -67,99 +84,31 @@ width:65%;
 align-content:center;
 justify-content:center;
 
-
 @media (min-width: 768px){
   
-  width:33%;};
+  width:33%;
+}
+a{
+  color:${theme.colors.green};
+text-decoration:none;
+}
+}
 
-`;
-
-
-
-
-const SocialList = styled.ul`
-display: flex;
+ul{display: flex;
 flex-wrap: nowrap;
 padding: 0px;
 margin: 25px 0px 10px;
 list-style: outside none none;
-justify-content:flex-end;
-align-content:flex-end;
-top: -8rem;
-position:relative;
-top:3em;
-`;
-
-const SocialListItem = styled.li`
+align-content:flex-start;}
+li
+{
 padding-left:1em;
-font-size: 24px;
+font-size: 13px;
 color: ${theme.colors.vLightSlate};
-margin-right: 1em;
-position:relative;
-top:-2.5em;
+margin-right: 20px;
+margin-bottom: 7px;
 white-space: nowrap;
-
-&:hover{
-  color:${theme.colors.green};
-  transform: scale(1.150);
-};
-
-`;
-
-const A = styled.a`
-
-text-decoration:none;
-color:inherit;
-`;
-
-
-
-
-export default class ProjectCard1 extends Component {
-    render() {
-        return (
-            <Card>
-        
-            <Heading1>Featured Project</Heading1>
-            <Heading2>My Personal Website</Heading2>
-            
-  
-   <Paragraph>
-       
-   <p>A more lightweight and minimal iteration of my website. Built with ReactJs and hosted on Netlify.
-    </p>
-  
-   </Paragraph>
-   
-            <SkillList>
-            
-                <SkillListItem>React</SkillListItem>
-                <SkillListItem>HTML & CSS</SkillListItem>
-                <SkillListItem>Javascript(ES6)</SkillListItem>
-                
-           </SkillList>
-   
-  
-          <SocialList>
-          <SocialListItem>
-         <A href="https://github.com/tommymaher15/Personal-Site-2.0-"> <FaGithubSquare/></A>
-          </SocialListItem>
-  
-          <SocialListItem>
-          
-          <A href="https://clever-nightingale-170988.netlify.app/"> <FaExternalLinkSquareAlt/></A>
-          </SocialListItem>
-         
-          </SocialList>
-         
-        
-          
-        
-        </Card>
-        )
-    }
 }
 
 
-
-
+`;
