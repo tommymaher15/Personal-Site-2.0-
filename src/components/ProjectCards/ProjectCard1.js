@@ -1,35 +1,34 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
-
 import Socials from "../Icons/Socials";
-//
-
-
-
-
-
+import Image from "./project1.png";
 
 export default class ProjectCard1 extends Component {
     render() {
         return (
             <Card>
                <CardContent>
+             
                <h4>Featured Project</h4>
                <h5>Coming soon!</h5>
+              
                 <p>Currently working on this project but feel free to check out my
                   <a href ="https://twitter.com/TommyMa88163906"> Twitter </a>
                 for more information about it!
                </p>
-  
+               
                <ul>
                  <li>React</li>
                  <li>RESTful Api</li>
                  <li>Javascript(ES6)</li>
                 
                </ul>
+              
             <Socials />
-          </CardContent>
+ 
+         </CardContent>
+         
         </Card>
         )
     }
@@ -37,12 +36,13 @@ export default class ProjectCard1 extends Component {
 
 
 
-
+// Styles 
 
 const Card = styled.div`
  display: flex;
 flex-direction: column;
 justify-content: flex-start;
+
 background-color:${theme.colors.Navy};
 box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.3);
 width: 100%;
@@ -52,6 +52,18 @@ width: 100%;
 width:70%;
 margin-left:8em;
 };
+`;
+
+
+const CardImage = styled.div`
+display:flex;
+margin-right: auto;
+img{
+  width:50%;
+  height:auto;
+}
+
+
 `;
 
 
