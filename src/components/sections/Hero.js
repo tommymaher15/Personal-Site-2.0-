@@ -124,7 +124,7 @@ export default class Hero extends Component {
        <Heading3>I solve problems using code.</Heading3>
        
        <HeroP>
-        I am a frontend developer based in Dublin, Ireland specializing
+        I'm a frontend developer based in Dublin, Ireland specializing
         in building clean and robust products that solve your problems and look great. 
         </HeroP>
      
