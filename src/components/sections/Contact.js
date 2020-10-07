@@ -92,6 +92,7 @@ cursor: pointer;
 /* come back to this!! */
   background-color:${theme.colors.green};
   color:${theme.colors.navy};
+  opacity:0.7;
 }
 
 
