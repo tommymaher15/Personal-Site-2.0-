@@ -32,7 +32,7 @@ list-style: outside none none;
 justify-content:flex-end;
 align-content:flex-end;
 top: -8rem;
-align-self:flex-start;
+
 position:relative;
 top:3em;
 `;

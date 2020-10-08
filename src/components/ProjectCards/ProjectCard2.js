@@ -2,17 +2,20 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 import Socials from "../Icons/Socials";
-
-
-
+import Image from "./project1.png";
 
 export default class ProjectCard1 extends Component {
     render() {
         return (
+          <ProjectWrapper>
+           <CardImage>   <img src = {Image} alt = "personal website"></img></CardImage>
             <Card>
+           
              <CardContent>
+
                <h4>Featured Project</h4>
                <h5>Coming soon!</h5>
+
                 <p>Currently working on this project but feel free to check out my
                   <a href ="https://twitter.com/TommyMa88163906"> Twitter </a>
                 for more information about it!
@@ -22,41 +25,52 @@ export default class ProjectCard1 extends Component {
                  <li>React</li>
                  <li>RESTful Api</li>
                  <li>Javascript(ES6)</li>
-                
+               
                </ul>
             <Socials />
           </CardContent>
         </Card>
+        
+       </ProjectWrapper>
         )
     }
 }
+
+const ProjectWrapper = styled.div`
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+
+`;
 
 
 
 
 /* Project card Styles */ 
 const Card = styled.div`
- display: flex;
-flex-direction: column;
-justify-content: flex-start;
 background-color:${theme.colors.Navy};
-box-shadow: -5px 4px 5px 0px rgba(0, 0, 0, 0.3);
+
 width: 100%;
 
-@media (min-width: 768px) {
+
+@media (min-width: 768px)
+ {
   padding: 20px;
-width:70%;
-margin-left:8em;
+width:100%;
+grid-column: 10/7;
 };
 `;
-
+const CardImage = styled.div`
+    grid-column: 2 / -7;
+position: relative;
+top: 1em;
+    img{
+  width:100%;
+  height:auto;
+}
+`;
 
 const CardContent = styled.div`
-display:flex;
-align-content:flex-end;
-justify-content:center;
-align-items:flex-end;
-flex-direction:column;
+ grid-column: 10 / 3;
 
 h4{
   font-size: 13px;
@@ -65,7 +79,8 @@ color: ${theme.colors.green};
 font-family: "SF Mono";
 font-weight:400;
 margin-top: 10px;
-padding-top: 0px;}
+padding-top: 0px;
+}
 
 h5{font-size: 28px;
 margin: 0px 0px 20px;
@@ -74,19 +89,19 @@ font-family:"Calibre";
 font-weight:600;}
 
 
-p{padding: 25px;
+p{
+  padding: 25px;
 color: rgb(168, 178, 209);
 font-size: 18px;
 border-radius: 3px;
-box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+text-align:right;
 background-color: ${theme.colors.lightNavy};
 width:65%;
-align-content:center;
-justify-content:center;
+
 
 @media (min-width: 768px){
   
-  width:33%;
+  width:110%;
 }
 a{
   color:${theme.colors.green};
@@ -112,3 +127,7 @@ white-space: nowrap;
 
 
 `;
+
+
+
+    
