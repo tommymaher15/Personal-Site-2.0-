@@ -2,32 +2,24 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 import Socials from "../Icons/Socials";
-import Image from "./project2.PNG";
+import Image from "./project1.png";
 
-
-export default class ProjectCard2 extends Component {
+export default class ProjectCard1 extends Component {
     render() {
         return (
           <ProjectWrapper>
-
-     
-          <CardImage>
-          <a href = "https://githublookuplight.netlify.app/">
-          <Overlay>   </Overlay>
-           <Picture src = {Image} alt = "github-repo-finder"/>
-           </a>
-           </CardImage>
-        
-          
-
+           <CardImage>   <img src = {Image} alt = "personal website"></img></CardImage>
             <Card>
+           
              <CardContent>
 
                <h4>Featured Project</h4>
-               <h5>Github Repo finder</h5>
+               <h5>Coming soon!</h5>
 
-                <p> Github user repository search. Darkmode coming soon!    </p>
-             
+                <p>Currently working on this project but feel free to check out my
+                  <a href ="https://twitter.com/TommyMa88163906"> Twitter </a>
+                for more information about it!
+               </p>
   
                <ul>
                  <li>React</li>
@@ -35,7 +27,7 @@ export default class ProjectCard2 extends Component {
                  <li>Javascript(ES6)</li>
                
                </ul>
-            <Socials github = "https://github.com/tommymaher15/github-repo-finder" link = "https://githublookuplight.netlify.app/ "/>
+            <Socials />
           </CardContent>
         </Card>
         
@@ -47,7 +39,7 @@ export default class ProjectCard2 extends Component {
 const ProjectWrapper = styled.div`
 display: grid;
 grid-template-columns: repeat(12, 1fr);
-position:relative;
+
 `;
 
 
@@ -56,45 +48,30 @@ position:relative;
 /* Project card Styles */ 
 const Card = styled.div`
 background-color:${theme.colors.Navy};
+
 width: 100%;
+
+
 @media (min-width: 768px)
  {
   padding: 20px;
-  grid-column: 10/7;
+width:100%;
+grid-column: 10/7;
 };
 `;
 const CardImage = styled.div`
     grid-column: 2 / -7;
-    width: 100%;
-    height: 100%;
-
-
-
-
-
-
-@media (max-width: 768px)
-{ display:none; };
-`
-
-const Overlay = styled.div`
-
-background-color: rgba(24, 16, 64, 0.54);
-grid-column: 2 / -7;
-
-width: 100%;
-height: 85%;
-position: absolute;
-&:focus {
-  background-color:rgba(24, 16, 64, 0);
-}
-`; 
-
-
-const  Picture = styled.img`
-
-width:100%;
+position: relative;
+top: 1em;
+    img{
+  width:100%;
   height:auto;
+}
+@media (max-width: 768px)
+ {
+  display:none;
+};
+
 `;
 
 const CardContent = styled.div`
@@ -155,6 +132,7 @@ white-space: nowrap;
 
 
 `;
+
 
 
     

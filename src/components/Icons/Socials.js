@@ -2,16 +2,16 @@ import React from 'react'
 import styled from '@emotion/styled';
 import { FaGithubSquare,FaExternalLinkSquareAlt  } from 'react-icons/fa';
 import theme from '../../styles/theme';
-const Socials = () => {
+const Socials = (props) => {
     return (
         <SocialList>
         <SocialListItem>
-       <A href="https://github.com/tommymaher15/Personal-Site-2.0-"> <FaGithubSquare/></A>
+       <A href={props.github}> <FaGithubSquare/></A>
         </SocialListItem>
 
         <SocialListItem>
         
-        <A href=""> <FaExternalLinkSquareAlt/></A>
+        <A href={props.link}> <FaExternalLinkSquareAlt/></A>
         </SocialListItem>
        
         </SocialList>

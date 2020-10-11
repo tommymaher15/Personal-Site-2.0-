@@ -97,7 +97,7 @@ export default class MyWork extends Component {
 
  
 
- <ProjectCard1></ProjectCard1>
+ <ProjectCard1 /> 
  <ProjectCard2 /> 
 
    

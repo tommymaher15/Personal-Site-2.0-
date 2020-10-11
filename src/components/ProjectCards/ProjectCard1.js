@@ -12,25 +12,31 @@ export default class ProjectCard1 extends Component {
                <CardContent>
              
                <h4>Featured Project</h4>
-               <h5>Coming soon!</h5>
+               <h5>My Personal Website</h5>
               
-                <p>Currently working on this project but feel free to check out my
-                  <a href ="https://twitter.com/TommyMa88163906"> Twitter </a>
-                for more information about it!
+                <p>The second iteration of my personal website. Built with ReactJS.
                </p>
                
                <ul>
+
                  <li>React</li>
-                 <li>RESTful Api</li>
+                 <li>Styled Components</li>
                  <li>Javascript(ES6)</li>
                 
                </ul>
               
              
-            <Socials />
+            <Socials github = "https://github.com/tommymaher15/Personal-Site-2.0-" link = "https://www.tommymaher.io/" />
          </CardContent>
+         
         </Card>
-       <CardImage>   <img src = {Image} alt = "personal website"></img></CardImage>
+       <CardImage>
+
+       <a href = "https://www.tommymaher.io/">
+       <Overlay /> 
+          <img src = {Image} alt = "personal website"></img>
+          </a>
+          </CardImage>
         </ProjectWrapper>
         )
     }
@@ -39,8 +45,20 @@ export default class ProjectCard1 extends Component {
 const ProjectWrapper = styled.div`
 display: grid;
 grid-template-columns: repeat(12, 1fr);
+position:relative;
 `;
 
+const Overlay = styled.div`
+
+background-color: rgba(24, 16, 64, 0.54);
+
+width: 100%;
+height: 84%;
+position: absolute;
+&:focus {
+  background-color:none;
+}
+`; 
 
 // Styles 
 
