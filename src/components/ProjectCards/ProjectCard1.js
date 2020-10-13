@@ -53,7 +53,7 @@ const Overlay = styled.div`
 background-color: rgba(24, 16, 64, 0.54);
 
 width: 100%;
-height: 84%;
+height: 77%;
 position: absolute;
 &:focus {
   background-color:none;
