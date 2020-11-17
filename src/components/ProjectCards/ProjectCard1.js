@@ -49,6 +49,9 @@ position:relative;
 `;
 
 const Overlay = styled.div`
+ @media (max-width: 768px) {
+      display:none;
+    }
 
 background-color: rgba(24, 16, 64, 0.54);
 
@@ -84,6 +87,9 @@ img{
   width:100%;
   height:auto;
 }
+@media (max-width: 768px) {
+      img{display:none;}
+    }
 `;
 
 
