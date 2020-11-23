@@ -182,7 +182,7 @@ export default function About() {
 
 <Container>
 <TextFlex>
- <p>Hi! I'm Tommy, I'm a front-end developer from Dublin, Ireland.</p> 
+ <p>Hi! I'm Tommy, I'm a frontend developer from Dublin, Ireland.</p> 
 
  <p>
  I enjoy creating things that exist online, Whether it is a website, application or anything in between.
@@ -193,10 +193,10 @@ export default function About() {
   <p> Here are some technologies I've been working with recently:</p>
   <SkillList>
     
-   <SkillItem>RESTful APIS</SkillItem>
+   <SkillItem>GraphQL</SkillItem>
    <SkillItem>React</SkillItem>
    <SkillItem>JavaScript (ES6+)</SkillItem>
-   <SkillItem>Styled Components</SkillItem>
+   <SkillItem>Jamstack</SkillItem>
    
 </SkillList>
 
