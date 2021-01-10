@@ -1,8 +1,9 @@
-# PersonalSite2.0 
+# Personal Site 2.0 
 
 The second iteration of my personal website. Still a work in progress and will be making some more additions over time. Want to use it yourself? Feel free to fork or clone the project with attribution! :rocket:
 
-
+##Latest Changes 10/01/2021
+Currently working on a refactor of a lot of the components to make things more reusable and to allow users to input data should they wish to use this website as a template. 
 
 
 ## Contributing
