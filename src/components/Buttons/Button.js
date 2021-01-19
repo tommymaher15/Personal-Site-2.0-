@@ -29,7 +29,7 @@ padding: 1.25rem 1.75rem;
 line-height:1;
 margin-top:2em;
 outline: none;
-
+transition: color 0.3s linear;
 
   
 

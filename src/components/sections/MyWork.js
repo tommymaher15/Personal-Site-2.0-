@@ -93,14 +93,8 @@ export default class MyWork extends Component {
            <HeadingTitle><a href name = "work">Some Things I've Built</a></HeadingTitle>
            </HeadingContainer>
               <GridContainer>
-
-
- 
-
  <ProjectCard1 /> 
  <ProjectCard2 /> 
-
-   
            </GridContainer>
            </Div>
         )

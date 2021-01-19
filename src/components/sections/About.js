@@ -3,6 +3,49 @@ import styled from '@emotion/styled';
 import theme from '../../styles/theme';
 import Image from "./myimg.jpg";
 
+// dynamic href linking for the entire page. 
+
+// Learn react routing? 
+// link to hash!!! LFG!!!! 
+
+
+
+/* List Component End here */ 
+// Regarding this issue, Will have to create a href prop and make it more reusable. Come back to this later. 
+export default function About() {
+    return (
+ <Section>
+<AboutHeader>
+<AboutHeading><a href name = "about">About Me</a></AboutHeading>
+</AboutHeader>
+<Container>
+<TextFlex>
+ <p>Hi! I'm Tommy, I'm a frontend developer from Dublin, Ireland.</p> 
+
+ <p>
+ I enjoy creating things that exist online, Whether it is a website, application or anything in between.
+  My goal is to build a performant and robust product that provides the user with a great experience.
+  </p>
+  <p> I fell in love with software development and I find its a constant learning experience every day.</p>
+  <p> Here are some technologies I've been working with recently:</p>
+  <SkillList>
+   <SkillItem>Javascript(ES6)</SkillItem>
+   <SkillItem>React</SkillItem>
+   <SkillItem>CSS</SkillItem>
+   <SkillItem>GraphQL</SkillItem>
+</SkillList>
+</TextFlex>
+<ImgFlex>
+<ImgOverlay>
+    <AboutImg src={Image} alt =""></AboutImg>
+    </ImgOverlay>
+</ImgFlex>
+</Container>
+ </Section>
+    )
+}
+
+
 
 
 const Section = styled.section`
@@ -168,58 +211,3 @@ color:${theme.colors.green};
  };
  
  `;
-
-/* List Component End here */ 
-
-export default function About() {
-    return (
- <Section>
-<AboutHeader>
-
-<AboutHeading><a href name = "about">About Me</a></AboutHeading>
-
-</AboutHeader>
-
-<Container>
-<TextFlex>
- <p>Hi! I'm Tommy, I'm a frontend developer from Dublin, Ireland.</p> 
-
- <p>
- I enjoy creating things that exist online, Whether it is a website, application or anything in between.
-  My goal is to build a performant and robust product that provides the user with a great experience.
-  </p>
-  <p> I fell in love with software development and I find its a constant learning experience every day.</p>
-  
-  <p> Here are some technologies I've been working with recently:</p>
-  <SkillList>
-    
-   <SkillItem>GraphQL</SkillItem>
-   <SkillItem>React</SkillItem>
-   <SkillItem>JavaScript (ES6+)</SkillItem>
-   <SkillItem>Jamstack</SkillItem>
-   
-</SkillList>
-
-
-
-
-</TextFlex>
-<ImgFlex>
-<ImgOverlay>
-    <AboutImg src={Image} alt =""></AboutImg>
-    </ImgOverlay>
-</ImgFlex>
-
-
-</Container>
-
-
-
-
- </Section>
-
-
-            
-       
-    )
-}

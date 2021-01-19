@@ -38,10 +38,6 @@ color:${theme.colors.green};
 font-family:"SF Mono";
 font-size: clamp(0.5rem, 1vw + 1rem, 1.2rem);
 font-weight:400;
-
-
-
-
 `;
 
 
@@ -54,9 +50,8 @@ font-weight: 600;
 line-height:1;
 font-size: 3.5em;
 margin-bottom: -1px;
-
-
 `; 
+
 const Paragraph = styled.p`
 align-self:center;
 width:50%;
@@ -66,8 +61,8 @@ font-weight:400;
 font-size:${theme.fontSizes.xl};
 line-height:1.5;
 max-width: 500px;
-
 `;
+
 /* Button Component */ 
 const Btn = styled.button`
 align-self:center;
@@ -84,9 +79,8 @@ line-height:1;
 margin-top:2em;
 outline: none;
 cursor: pointer;
+transition: color 0.3s linear;
 
-
-  
 
 &:hover {
 /* come back to this!! */
@@ -94,9 +88,6 @@ cursor: pointer;
   color:${theme.colors.navy};
   opacity:0.7;
 }
-
-
-
 `;
 
 /* Flex end Test here. */
@@ -131,9 +122,9 @@ export default class Contact extends Component {
 
                <Paragraph>
                Want to reach out to me? My inbox is always open.
-               I'm currently looking for job opportunities but if you have a
-               Question or just want to say hello! I'll try my best to get
-               back to you. 
+               I'm currently looking for job opportunities.If you have a
+               question or just want to say hello I'll try my best to get
+               back to you! 
                
                </Paragraph>
 
