@@ -49,6 +49,7 @@ font-weight:400;
 padding-bottom:0;
 padding-top:0;
 margin-bottom:0;
+padding-bottom:1em;
 };
 
 
@@ -83,8 +84,7 @@ line-height:1;
 margin-top: 0px;
     margin-bottom: 30px;
     margin-right: 100px;
-    border-right-width: 100px;
-    border-top-width: 10px;
+   
     width:50%;
 
     @media (min-width: 768px){
@@ -125,7 +125,7 @@ export default class Hero extends Component {
        
        <HeroP>
         I'm a frontend developer based in Dublin, Ireland specializing
-        in building clean and robust products that solve your problems and look great. 
+        in building clean and robust products that drive attention to your product or service. 
         </HeroP>
      
       

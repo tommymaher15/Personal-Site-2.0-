@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+
 
 html
 {  margin: 0px;
@@ -5,16 +9,18 @@ html
   border:0px;
   overflow-x:hidden;
  border-width: 0px;
+ scroll-behavior: smooth;
 
 };
 
-* unvisited link */
-a:link {
-  color: inherit;
+a{
+text-decoration:none;
+
 }
 
+
 /* visited link */
-a:visited {
+a:visited{
   color:inherit;
 }
 
@@ -32,4 +38,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  border-color:inherit;
 }
+`;
+
+export default GlobalStyles;

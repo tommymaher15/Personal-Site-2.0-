@@ -6,9 +6,35 @@ import styled from '@emotion/styled';
 import Email from './layouts/Email';
 import Content from "./layouts/Content";
 import GlobalFonts from "./styles/fonts";
-//normalizing css. will come back to this for a better workaround later. 
+import GlobalStyles from "./styles/GlobalStyles";
+import { ChakraProvider } from "@chakra-ui/react"
 
-import "../src/App.css";
+
+
+
+
+
+
+
+
+function App() {
+  return (
+    <ChakraProvider>
+    <Grid>
+    <GlobalFonts/>
+    <GlobalStyles /> 
+    <Header />
+    <Sidebar />
+    <Content /> 
+    <Email />
+    <Footer />
+    </Grid>
+    </ChakraProvider>
+  );
+}
+
+export default App;
+
 
 
 
@@ -33,24 +59,3 @@ const Grid = styled.div`
   }
 
 `;
-
-
-
-
-
-function App() {
-  return (
-    
-  <Grid>
-  <GlobalFonts/>
-<Header />
-<Sidebar />
-<Content /> 
-<Email />
-<Footer />
-</Grid>
-
-  );
-}
-
-export default App;
