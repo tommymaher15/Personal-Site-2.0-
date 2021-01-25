@@ -121,11 +121,10 @@ export default class Hero extends Component {
        <Heading1> Hi, my name is  </Heading1>
     
        <Heading2> Tommy Maher<Emoji symbol="👋" label="sheep" /> </Heading2>
-       <Heading3>I solve problems using code.</Heading3>
+       <Heading3>I create high quality software.</Heading3>
        
        <HeroP>
-        I'm a frontend developer based in Dublin, Ireland specializing
-        in building clean and robust products that drive attention to your product or service. 
+      I'm a software engineer based in Dublin Ireland that builds performant websites and applications that solve your problems and meet your business requirements.
         </HeroP>
      
       

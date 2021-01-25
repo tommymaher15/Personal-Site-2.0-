@@ -90,7 +90,7 @@ export default class MyWork extends Component {
         return (
            <Div>
              <HeadingContainer>
-           <HeadingTitle><a href name = "work">Some Things I've Built</a></HeadingTitle>
+           <HeadingTitle id = "work">Some Things I've Built</HeadingTitle>
            </HeadingContainer>
               <GridContainer>
  <ProjectCard1 /> 

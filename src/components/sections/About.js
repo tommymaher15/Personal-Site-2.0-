@@ -16,11 +16,11 @@ export default function About() {
     return (
  <Section>
 <AboutHeader>
-<AboutHeading><a href name = "about">About Me</a></AboutHeading>
+<AboutHeading id = "about">About Me</AboutHeading>
 </AboutHeader>
 <Container>
 <TextFlex>
- <p>Hi! I'm Tommy, I'm a frontend developer from Dublin, Ireland.</p> 
+ <p>Hi! I'm Tommy, I'm a software engineer from Dublin, Ireland.</p> 
 
  <p>
  I enjoy creating things that exist online, Whether it is a website, application or anything in between.
@@ -30,8 +30,8 @@ export default function About() {
   <p> Here are some technologies I've been working with recently:</p>
   <SkillList>
    <SkillItem>Javascript(ES6)</SkillItem>
-   <SkillItem>React</SkillItem>
-   <SkillItem>CSS</SkillItem>
+   <SkillItem>Shopify </SkillItem>
+   <SkillItem>NodeJS</SkillItem>
    <SkillItem>GraphQL</SkillItem>
 </SkillList>
 </TextFlex>

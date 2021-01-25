@@ -113,8 +113,8 @@ export default class Contact extends Component {
            <Section>
              <FlexContainer>
 
-     <ContactHeading>
-     <a href name = "contact">Whats Next?</a>
+     <ContactHeading id = "contact">
+    Whats Next?
      </ContactHeading>
 
         
@@ -122,7 +122,7 @@ export default class Contact extends Component {
 
                <Paragraph>
                Want to reach out to me? My inbox is always open.
-               I'm currently looking for job opportunities.If you have a
+               I'm currently working on an exciting project which I will be announcing soon.If you have a
                question or just want to say hello I'll try my best to get
                back to you! 
                

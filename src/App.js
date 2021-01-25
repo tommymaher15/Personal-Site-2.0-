@@ -7,19 +7,13 @@ import Email from './layouts/Email';
 import Content from "./layouts/Content";
 import GlobalFonts from "./styles/fonts";
 import GlobalStyles from "./styles/GlobalStyles";
-import { ChakraProvider } from "@chakra-ui/react"
-
-
-
-
-
 
 
 
 
 function App() {
   return (
-    <ChakraProvider>
+ 
     <Grid>
     <GlobalFonts/>
     <GlobalStyles /> 
@@ -29,7 +23,7 @@ function App() {
     <Email />
     <Footer />
     </Grid>
-    </ChakraProvider>
+
   );
 }
 
