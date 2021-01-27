@@ -57,7 +57,7 @@ justify-content:center;
     color:${theme.colors.green};
     font-family: "SF Mono";
     font-size:16px;
-    padding:1em;
+    padding:3em;
     cursor: pointer;
     display:inline;
 
