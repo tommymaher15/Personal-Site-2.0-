@@ -29,6 +29,8 @@ list-style-type:none;
     display:none;
 }
 
+
+
 `;
 
 
@@ -44,6 +46,10 @@ color: ${theme.colors.vLightSlate};
 
  
 };
+
+@media(max-width: 768px){
+    padding-left:3em;
+}
 
 `;
 
