@@ -47,6 +47,6 @@ export default function MenuItems() {
 
 
 const MenuItemStyle = styled.div`
-justify
+
 
 `;
