@@ -3,6 +3,29 @@ import styled from '@emotion/styled';
 import theme from "../styles/theme";
 import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
+export default function Sidebar() {
+    return (
+ 
+        <Sidebar1> 
+       
+        
+        <div>
+        <SocialList> 
+        <SocialListItem><a href="https://github.com/tommymaher15"><FaGithubSquare /></a></SocialListItem>
+        <SocialListItem><a href=" https://www.linkedin.com/in/tommymaher10/"><FaLinkedin /></a></SocialListItem>
+        <SocialListItem><a href="https://twitter.com/TommyMa88163906"><FaTwitterSquare> </FaTwitterSquare></a> </SocialListItem>
+       
+        </SocialList>
+
+   
+        </div>
+        
+        
+        </Sidebar1>
+      
+    )
+}
+
 
 const Sidebar1 = styled.aside`
      background-color:${theme.colors.navy};
@@ -12,17 +35,10 @@ const Sidebar1 = styled.aside`
   display:none;
 }
 
-`;
-
-
-
-
-const StickyTesting = styled.div`
- position: fixed;
+div{ position: fixed;
   bottom: 0;
   left: 0;
-
- 
+}
 `;
 
 const SocialList = styled.ul`
@@ -53,49 +69,18 @@ padding:30px;
 color: ${theme.colors.vLightSlate};
 
 
-&:visited {color:${theme.colors.slate}}
-
+&:visited {
+  color:${theme.colors.slate}
+  }
 
 &:hover{
   color:${theme.colors.green};
-
-
-
   cursor: pointer;
 };
 
-
-
-
-`;
-
-const A = styled.a`
-text-decoration:none;
-color: inherit
-
-
-`;
-
-export default function Sidebar() {
-    return (
- 
-        <Sidebar1> 
-       
-        
-        <StickyTesting>
-        <SocialList> 
-        <SocialListItem><A href="https://github.com/tommymaher15"><FaGithubSquare /></A></SocialListItem>
-        <SocialListItem><A href=" https://www.linkedin.com/in/tommymaher10/"><FaLinkedin /></A></SocialListItem>
-        <SocialListItem><A href="https://twitter.com/TommyMa88163906"><FaTwitterSquare> </FaTwitterSquare></A> </SocialListItem>
-       
-        </SocialList>
-
-   
-        </StickyTesting>
-        
-        
-        </Sidebar1>
-      
-    )
+a{
+  text-decoration:none;
+ color: inherit
 }
+`;
 
