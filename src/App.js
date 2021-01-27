@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './layouts/Header';
+import Header from '../src/layouts/Header/Header';
 import Sidebar from "./layouts/Sidebar";
 import Footer from "./layouts/Footer";
 import styled from '@emotion/styled';

@@ -19,6 +19,7 @@
     "emotion-theming": "^10.0.27",
     "framer-motion": "^3.2.1",
     "git": "^0.1.5",
+    "hamburger-react": "^2.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
