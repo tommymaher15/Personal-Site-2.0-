@@ -5,22 +5,14 @@ import { FaGithubSquare, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
 
 export default function Sidebar() {
     return (
- 
-        <Sidebar1> 
-       
-        
+        <Sidebar1>
         <div>
         <SocialList> 
         <SocialListItem><a href="https://github.com/tommymaher15"><FaGithubSquare /></a></SocialListItem>
         <SocialListItem><a href=" https://www.linkedin.com/in/tommymaher10/"><FaLinkedin /></a></SocialListItem>
         <SocialListItem><a href="https://twitter.com/TommyMa88163906"><FaTwitterSquare> </FaTwitterSquare></a> </SocialListItem>
-       
         </SocialList>
-
-   
         </div>
-        
-        
         </Sidebar1>
       
     )
