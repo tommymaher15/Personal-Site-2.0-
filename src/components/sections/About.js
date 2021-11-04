@@ -20,7 +20,7 @@ export default function About() {
 </AboutHeader>
 <Container>
 <TextFlex>
- <p>Hi! I'm Tom Tom , I'm a software engineer from Dublin, Ireland.</p> 
+ <p>Hi guys, I'm a software engineer from Dublin, Ireland.</p> 
 
  <p>
  I enjoy creating things that exist online, Whether it is a website, application or anything in between.
