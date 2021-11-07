@@ -19,6 +19,7 @@ export default function Email() {
     <a href = "mailto: tommymaher10@gmail.com">tommymaher10@gmail.com</a>
        </div>
        <h1>Hello World</h1>
+       <h2>Hi</h2>
         </SideEmail>
     )
 }
