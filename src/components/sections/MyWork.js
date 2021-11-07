@@ -27,7 +27,7 @@ const GridContainer = styled.div`
 
   list-style: none;
   margin: 0 20px;
-
+ background: blue !important;
 `;
 
 
