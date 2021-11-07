@@ -124,12 +124,12 @@ export default class Contact extends Component {
                Want to reach out to me? My inbox is always open.
                I'm currently working on an exciting project which I will be announcing soon.If you have a
                question or just want to say hello I'll try my best to get
-               back to you! 
+               back to you! asdfadsfadsfa
                
-               </Paragraph>
-
+               </Paragraph>  
+ 
                <A href = "mailto: tommymaher10@gmail.com"><Btn>Say Hello</Btn></A>
-
+ asdfadsfadsfadsfasdf
                </FlexContainer>
 
 
