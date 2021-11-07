@@ -14,9 +14,9 @@ import Image from "./myimg.jpg";
 // Regarding this issue, Will have to create a href prop and make it more reusable. Come back to this later. 
 export default function About() {
     return (
- <Section>
+ <Section>   
 <AboutHeader>
-<AboutHeading id = "about">About Me</AboutHeading>
+<AboutHeading id = "about">Abasdfadsf out Me</AboutHeading>
 </AboutHeader>
 <Container>
 <TextFlex>
