@@ -18,6 +18,7 @@ export default function Email() {
        <div>
     <a href = "mailto: tommymaher10@gmail.com">tommymaher10@gmail.com</a>
        </div>
+       <h1>Hello World</h1>
         </SideEmail>
     )
 }
@@ -37,7 +38,7 @@ div{
   bottom: 0;
   right: 0;
   padding-right:4em;
-  
+
 
 }
 
